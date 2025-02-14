@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Insurance Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        .form-section h2 {
+            margin-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="checkbox"], .form-group input[type="radio"] {
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Commercial Insurance Application Form</h1>
+
+<!-- Location and Building Information -->
+<div class="form-section">
+    <h2>Location and Building Information</h2>
+    <div class="form-group">
+        <label for="locationNumber">Location Number:</label>
+        <input type="text" id="locationNumber" name="locationNumber">
+    </div>
+    <div class="form-group">
+        <label for="buildingNumber">Building Number:</label>
+        <input type="text" id="buildingNumber" name="buildingNumber">
+    </div>
+    <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address">
+    </div>
+    <div class="form-group">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+    </div>
+    <div class="form-group">
+        <label for="province">Province:</label>
+        <input type="text" id="province" name="province">
+    </div>
+    <div class="form-group">
+        <label for="postalCode">Postal Code:</label>
+        <input type="text" id="postalCode" name="postalCode">
+    </div>
+    <div class="form-group">
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country">
+    </div>
+    <div class="form-group">
+        <label for="operations">Operations of Insured at this Location:</label>
+        <input type="text" id="operations" name="operations">
+    </div>
+</div>
+
+<!-- Mortgagees -->
+<div class="form-section">
+    <h2>Mortgagees</h2>
+    <div class="form-group">
+        <label for="mortgageeName1">Name & Mailing Address:</label>
+        <input type="text" id="mortgageeName1" name="mortgageeName1">
+    </div>
+    <div class="form-group">
+        <label for="interest1">Specify Interest in This Policy:</label>
+        <input type="text" id="interest1" name="interest1">
+    </div>
+    <div class="form-group">
+        <label for="mortgageeName2">Name & Mailing Address:</label>
+        <input type="text" id="mortgageeName2" name="mortgageeName2">
+    </div>
+    <div class="form-group">
+        <label for="interest2">Specify Interest in This Policy:</label>
+        <input type="text" id="interest2" name="interest2">
+    </div>
+</div>
+
+<!-- Loss Payees -->
+<div class="form-section">
+    <h2>Loss Payees</h2>
+    <div class="form-group">
+        <label for="lossPayeeName1">Name & Mailing Address:</label>
+        <input type="text" id="lossPayeeName1" name="lossPayeeName1">
+    </div>
+    <div class="form-group">
+        <label for="lossPayeeInterest1">Specify Interest in This Policy:</label>
+        <input type="text" id="lossPayeeInterest1" name="lossPayeeInterest1">
+    </div>
+    <div class="form-group">
+        <label for="lossPayeeName2">Name & Mailing Address:</label>
+        <input type="text" id="lossPayeeName2" name="lossPayeeName2">
+    </div>
+    <div class="form-group">
+        <label for="lossPayeeInterest2">Specify Interest in This Policy:</label>
+        <input type="text" id="lossPayeeInterest2" name="lossPayeeInterest2">
+    </div>
+</div>
+
+<!-- Additional Insureds (Liability) -->
+<div class="form-section">
+    <h2>Additional Insureds (Liability)</h2>
+    <div class="form-group">
+        <label for="additionalInsuredName1">Additional Insured (Including Address):</label>
+        <input type="text" id="additionalInsuredName1" name="additionalInsuredName1">
+    </div>
+    <div class="form-group">
+        <label for="additionalInsuredWithRespect1">With Respect to:</label>
+        <input type="text" id="additionalInsuredWithRespect1" name="additionalInsuredWithRespect1">
+    </div>
+    <div class="form-group">
+        <label for="additionalInsuredName2">Additional Insured (Including Address):</label>
+        <input type="text" id="additionalInsuredName2" name="additionalInsuredName2">
+    </div>
+    <div class="form-group">
+        <label for="additionalInsuredWithRespect2">With Respect to:</label>
+        <input type="text" id="additionalInsuredWithRespect2" name="additionalInsuredWithRespect2">
+    </div>
+</div>
+
+<!-- Broker's Assessment -->
+<div class="form-section">
+    <h2>Broker's Assessment</h2>
+    <div class="form-group">
+        <label for="brokerVisited">Has the Broker Visited This Building?</label>
+        <select id="brokerVisited" name="brokerVisited">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="brokerAssessment">Broker’s Assessment of Risk:</label>
+        <select id="brokerAssessment" name="brokerAssessment">
+            <option value="excellent">Excellent</option>
+            <option value="veryGood">Very Good</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="fair">Fair</option>
+            <option value="poor">Poor</option>
+        </select>
+    </div>
+</div>
+
+<!-- Operational Status -->
+<div class="form-section">
+    <h2>Operational Status</h2>
+    <div class="form-group">
+        <label for="operational">Will the Insured be Operational in This Building on the Effective Date?</label>
+        <select id="operational" name="operational">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="na">N/A (Insured is Landlord Only)</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="operationalExplanation">If no, explain:</label>
+        <textarea id="operationalExplanation" name="operationalExplanation"></textarea>
+    </div>
+</div>
+
+<!-- Renovations -->
+<div class="form-section">
+    <h2>Renovations</h2>
+    <div class="form-group">
+        <label for="renovations">Will Any Renovations Be Undertaken?</label>
+        <select id="renovations" name="renovations">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="renovationStartDate">Start Date:</label>
+        <input type="date" id="renovationStartDate" name="renovationStartDate">
+    </div>
+    <div class="form-group">
+        <label for="renovationCompletionDate">Completion Date:</label>
+        <input type="date" id="renovationCompletionDate" name="renovationCompletionDate">
+    </div>
+    <div class="form-group">
+        <label for="specificRenovations">What specific renovations will be undertaken?</label>
+        <textarea id="specificRenovations" name="specificRenovations"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="structuralWork">Will there be any structural work?</label>
+        <select id="structuralWork" name="structuralWork">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="structuralWorkDetails">If yes, details:</label>
+        <textarea id="structuralWorkDetails" name="structuralWorkDetails"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="renovationValue">Value of the renovation:</label>
+        <input type="text" id="renovationValue" name="renovationValue">
+    </div>
+    <div class="form-group">
+        <label for="occupiedDuringRenovation">Will the premises be occupied during the renovation period?</label>
+        <select id="occupiedDuringRenovation" name="occupiedDuringRenovation">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="occupiedDuringRenovationExplanation">If yes, explain:</label>
+        <textarea id="occupiedDuringRenovationExplanation" name="occupiedDuringRenovationExplanation"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="renovationPerformedBy">Who is performing the renovations?</label>
+        <select id="renovationPerformedBy" name="renovationPerformedBy">
+            <option value="insured">Insured</option>
+            <option value="contractors">Contractors</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="insuredRenovationExperience">If Insured is performing the renovations, advise experience:</label>
+        <textarea id="insuredRenovationExperience" name="insuredRenovationExperience"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="contractorsCGL">If contractors are performing the renovations, do the contractors have CGL in force?</label>
+        <select id="contractorsCGL" name="contractorsCGL">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+    </div>
+</div>
+
+<!-- Construction Details -->
+<div class="form-section">
+    <h2>Construction Details</h2>
+    <div class="form-group">
+        <label for="stories">Stories:</label>
+        <input type="text" id="stories" name="stories">
+    </div>
+    <div class="form-group">
+        <label for="yearBuilt">Year Built:</label>
+        <input type="text" id="yearBuilt" name="yearBuilt">
+    </div>
+    <div class="form-group">
+        <label for="sqFt">Sq Ft of Entire Bldg (not just Insured’s portion):</label>
+        <input type="text" id="sqFt" name="sqFt">
+    </div>
+    <div class="form-group">
+        <label for="exteriorWalls">Exterior Walls:</label>
+        <select id="exteriorWalls" name="exteriorWalls">
+            <option value="masonryVeneer">Masonry Veneer</option>
+            <option value="pouredConcrete">Poured Concrete</option>
+            <option value="frameAndAllOther">Frame and all other</option>
+            <option value="frameMetalClad">Frame metal clad</option>
+            <option value="concretePanelsOnSteelStructure">Concrete panels on steel structure</option>
+            <option value="metallicPanelsOnSteelStructure">Metallic panels on steel structure</option>
+            <option value="fireResistive">Fire resistive</option>
+            <option value="nonCombustibleWithNonMasonryWalls">Non-combustible with non-masonry walls</option>
+            <option value="hollowConcreteBlock">HCB – Hollow Concrete Block</option>
+            <option value="frameWithBrickVeneer">Frame w/ brick veneer</option>
+            <option value="solidBrick">Solid Brick</option>
+            <option value="steelOnSteel">Steel on steel</option>
+            <option value="wood">Wood</option>
+            <option value="nonCombustibleWithMasonryWalls">Non-combustible with masonry walls</option>
+            <option value="masonry">Masonry</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="floors">Floors:</label>
+        <select id="floors" name="floors">
+            <option value="wood">Wood</option>
+            <option value="pouredConcreteOrFireResistiveMaterial">Poured concrete or fire resistive material</option>
+            <option value="masonry">Masonry</option>
+            <option value="masonryOnWoodStructureOrOtherCombustibleMaterial">Masonry on wood structure or other combustible material</option>
+            <option value="nonCombustibleWithMasonry">Non-combustible with masonry</option>
+            <option value="brickOrStone">Brick or stone</option>
+            <option value="frameAndAllOther">Frame and all other</option>
+            <option value="concretePanelsOnSteelStructure">Concrete panels on steel structure</option>
+            <option value="heavyBeamOrMill">Heavy Beam or “Mill”</option>
+            <option value="nonCombustibleWithoutMasonry">Non-combustible without masonry</option>
+            <option value="steel">Steel</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="basement">Basement:</label>
+        <select id="basement" name="basement">
+            <option value="pouredConcrete">Poured concrete</option>
+            <option value="noBasement">No basement</option>
+            <option value="nonCombustibleWithMasonry">Non-combustible with masonry</option>
+            <option value="masonryWithCombustibleCeiling">Masonry with combustible ceiling</option>
+            <option value="frameAndAllOther">Frame and all other</option>
+            <option value="hollowConcreteBlock">HCB – Hollow concrete block</option>
+            <option value="fireResistive">Fire resistive</option>
+            <option value="nonCombustibleWithoutMasonry">Non-combustible without masonry</option>
+            <option value="masonryVeneer">Masonry veneer</option>
+            <option value="unfinishedCrawlSpace">Unfinished (crawl space)</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="roofConstruction">Roof Construction:</label>
+        <select id="roofConstruction" name="roofConstruction">
+            <option value="frameOnSteelJoints">Frame on steel Joints</option>
+            <option value="pouredConcrete">Poured Concrete</option>
+            <option value="frameOnWoodJoints">Frame on wood joints</option>
+            <option value="steelBeam">Steel Beam</option>
+            <option value="heavyBeamOrMill">Heavy beam or “mill”</option>
+            <option value="steelDeck">Steel Deck</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="roofCovering">Roof Covering:</label>
+        <select id="roofCovering" name="roofCovering">
+            <option value="asphaltShingles">Asphalt Shingles</option>
+            <option value="concreteOnSteelStructure">Concrete on steel structure</option>
+            <option value="woodShakes">Wood shakes</option>
+            <option value="rubberPolymer">Rubber/Polymer</option>
+            <option value="glassDomeSkylight">Glass dome/skylight</option>
+            <option value="steelDeck">Steel Deck</option>
+            <option value="concreteTiles">Concrete Tiles</option>
+            <option value="tile">Tile</option>
+            <option value="tarPaper">Tar Paper</option>
+            <option value="woodShingles">Wood Shingles</option>
+            <option value="tarAndGravel">Tar and gravel</option>
+            <option value="metal">Metal</option>
+            <option value="state">State</option>
+            <option value="plastic">Plastic</option>
+            <option value="glassPolyOnMetal">Glass/poly on metal</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="electrical">Electrical:</label>
+        <select id="electrical" name="electrical">
+            <option value="breakers">Breakers</option>
+            <option value="fuses">Fuses</option>
+            <option value="breakersAndFuses">Breakers & Fuses</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="plumbing">Plumbing:</label>
+        <select id="plumbing" name="plumbing">
+            <option value="copperPlasticPVCMix">Copper/Plastic PVC mix</option>
+            <option value="copper">Copper</option>
+            <option value="galvanized">Galvanized</option>
+            <option value="lead">Lead</option>
+            <option value="stainlessSteel">Stainless Steel</option>
+            <option value="plasticPVSOrCVS">Plastic (PVS or CVS)</option>
+            <option value="steel">Steel</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="heating">Heating:</label>
+        <select id="heating" name="heating">
+            <option value="furnaceCentral">Furnace central</option>
+            <option value="none">None</option>
+            <option value="radiant">Radiant</option>
+            <option value="heatPump">Heat pump</option>
+            <option value="woodBurningKitchenStove">Wood burning kitchen stove</option>
+            <option value="slowWoodBurningDirTightStove">Slow wood burning/dir tight stove</option>
+            <option value="acornStoveFranklinOrPotbellyStove">ACORN stove, Franklin or Potbelly Stove (loose fitting or no doors)</option>
+            <option value="furnaceCentralWithAddOnWoodBurningUnit">Furnace (central) with add-on wood burning unit</option>
+            <option value="woodFurnaceAddOn">Wood furnace add on</option>
+            <option value="masonryFireplace">Masonry fireplace</option>
+            <option value="biEnergyCombination">Bi-energy/combination</option>
+            <option value="store">Store</option>
+            <option value="solidFuelHeatingUnitIndoor">Solid fuel heating unit-indoor</option>
+            <option value="220WattElectricFurnace">220 Watt electric furnace (ie: Kalor)</option>
+            <option value="woodBurningUnitIndoor">Wood burning unit-indoor</option>
+            <option value="spaceHeater">Space heater</option>
+            <option value="recessedHeater">Recessed heater</option>
+            <option value="pipelessWarmAirFurnace">Pipeless warm air furnace</option>
+            <option value="roofMountedHVAC">Roof mounted HVAC</option>
+            <option value="boiler">Boiler</option>
+            <option value="electric">Electric</option>
+            <option value="combinedPrimaryOutsideRiskUnitAndInsideAuxiliary">Combined primary outside risk unit & inside auxiliary</option>
+            <option value="woodstoveNotAirtight">Woodstove, not airtight</option>
+            <option value="pelletStove">Pellet stove</option>
+            <option value="woodFurnace">Wood furnace</option>
+            <option value="fireplaceInsert">Fireplace insert</option>
+            <option value="furnaceCentral">Furnace (central)</option>
+            <option value="woodOilCombination">Wood/oil combination</option>
+            <option value="cookstore">Cookstore</option>
+            <option value="solidFuelHeatingUnitOutdoor">Solid fuel heating unit-outdoor</option>
+            <option value="floorFurnace">Floor furnace</option>
+            <option value="wallFurnace">Wall furnace</option>
+            <option value="magazineTypeCoalBurningStove">Magazine type coal burning stove</option>
+            <option value="waterHeaters">Water heaters</option>
+            <option value="suspendedHeaters">Suspended heaters</option>
+            <option value="geothermal">Geothermal</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="fuelForHeating">Fuel for Heating:</label>
+        <select id="fuelForHeating" name="fuelForHeating">
+            <option value="naturalGas">Natural Gas</option>
+            <option value="butane">Butane</option>
+            <option value="electricOil">Electric/Oil</option>
+            <option value="liquefiedPetroleumGas">Liquefied Petroleum Gas</option>
+            <option value="oil">Oil</option>
+            <option value="pellet">Pellet</option>
+            <option value="steam">Steam</option>
+            <option value="coal">Coal</option>
+            <option value="electricWood">Electric/Wood</option>
+            <option value="napthaGas">Naptha Gas</option>
+            <option value="oilWood">Oil/Wood</option>
+            <option value="propane">Propane</option>
+            <option value="wood">Wood</option>
+            <option value="electric">Electric</option>
+            <option value="kerosene">Kerosene</option>
+            <option value="naturalGas">Natural Gas</option>
+            <option value="otherSolidFuel">Other Solid Fuel</option>
+            <option value="solar">Solar</option>
+            <option value="combination">Combination</option>
+        </select>
+    </div>
+</div>
+
+<!-- Updates -->
+<div class="form-section">
+    <h2>Updates</h2>
+    <div class="form-group">
+        <label for="updates">None Known or:</label>
+        <input type="text" id="updates" name="updates">
+    </div>
+    <div class="form-group">
+        <label for="electricalUpdateYear">Electrical Update Year:</label>
+        <input type="text" id="electricalUpdateYear" name="electricalUpdateYear">
+    </div>
+    <div class="form-group">
+        <label for="plumbingUpdateYear">Plumbing Update Year:</label>
+        <input type="text" id="plumbingUpdateYear" name="plumbingUpdateYear">
+    </div>
+    <div class="form-group">
+        <label for="heatingUpdateYear">Heating Update Year:</label>
+        <input type="text" id="heatingUpdateYear" name="heatingUpdateYear">
+    </div>
+    <div class="form-group">
+        <label for="roofUpdateYear">Roof Update Year:</label>
+        <input type="text" id="roofUpdateYear" name="roofUpdateYear">
+    </div>
+    <div class="form-group">
+        <label for="electricalUpdateCompletePartial">Electrical Update Complete/Partial:</label>
+        <select id="electricalUpdateCompletePartial" name="electricalUpdateCompletePartial">
+            <option value="complete">Complete</option>
+            <option value="partial">Partial</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="plumbingUpdateCompletePartial">Plumbing Update Complete/Partial:</label>
+        <select id="plumbingUpdateCompletePartial" name="plumbingUpdateCompletePartial">
+            <option value="complete">Complete</option>
+            <option value="partial">Partial</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="heatingUpdateCompletePartial">Heating Update Complete/Partial:</label>
+        <select id="heatingUpdateCompletePartial" name="heatingUpdateCompletePartial">
+            <option value="complete">Complete</option>
+            <option value="partial">Partial</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="roofUpdateCompletePartial">Roof Update Complete/Partial:</label>
+        <select id="roofUpdateCompletePartial" name="roofUpdateCompletePartial">
+            <option value="complete">Complete</option>
+            <option value="partial">Partial</option>
+        </select>
+    </div>
+</div>
+
+<!-- Fire Protection -->
+<div class="form-section">
+    <h2>Fire Protection</h2>
+    <div class="form-group">
+        <label for="hydrants">Hydrants:</label>
+        <select id="hydrants" name="hydrants">
+            <option value="unprotected">Unprotected</option>
+            <option value="within150m">Within 150m</option>
+            <option value="within300m">Within 300m</option>
+            <option value="over300m">Over 300m</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="fireDepartment">Fire Department:</label>
+        <select id="fireDepartment" name="fireDepartment">
+            <option value="within5k">Within 5k</option>
+            <option value="within8k">Within 8k</option>
+            <option value="within13k">Within 13k</option>
+            <option value="over13k">Over 13k</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="portableExtinguishers">Portable Extinguishers:</label>
+        <select id="portableExtinguishers" name="portableExtinguishers">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="extinguishingAgentType">Extinguishing Agent Type:</label>
+        <select id="extinguishingAgentType" name="extinguishingAgentType">
+            <option value="carbonDioxide">Carbon Dioxide</option>
+            <option value="wetChemical">Wet Chemical</option>
+            <option value="foam">Foam</option>
+            <option value="halon">Halon</option>
+            <option value="dryChemical">Dry Chemical</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="sprinklerSystem">Sprinkler System:</label>
+        <select id="sprinklerSystem" name="sprinklerSystem">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="sprinklerSystemCoverage">Coverage %:</label>
+        <input type="text" id="sprinklerSystemCoverage" name="sprinklerSystemCoverage">
+    </div>
+    <div class="form-group">
+        <label for="sprinklerSystemDesignedFor">If sprinklered, was the sprinkler system designed for this current occupancy, or was it designed for a previous occupancy?</label>
+        <select id="sprinklerSystemDesignedFor" name="sprinklerSystemDesignedFor">
+            <option value="currentOccupancy">Current Occupancy</option>
+            <option value="previousOccupancy">Previous Occupancy</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="fireAlarm">Fire Alarm:</label>
+        <select id="fireAlarm" name="fireAlarm">
+            <option value="localAlarm">Local Alarm</option>
+            <option value="centralStation">Central Station</option>
+            <option value="monitoringStationFullService">Monitoring station (full service)</option>
+            <option value="location">Location</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="standpipeAndHose">Standpipe & Hose:</label>
+        <select id="standpipeAndHose" name="standpipeAndHose">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+    </div>
+</div>
+
+<!-- Crime Protection -->
+<div class="form-section">
+    <h2>Crime Protection</h2>
+    <div class="form-group">
+        <label for="burglarAlarm">Burglar Alarm:</label>
+        <select id="burglarAlarm" name="burglarAlarm">
+            <option value="none">None</option>
+            <option value="local">Local</option>
+            <option value="centralStation">Central Station</option>
+            <option value="other">Other (Describe)</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="safeType">Safe Type:</label>
+        <select id="safeType" name="safeType">
+            <option value="none">None</option>
+            <option value="fire">Fire</option>
+            <option value="burglary">Burglary</option>
+            <option value="vault">Vault</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="safeClass">Safe Class:</label>
+        <select id="safeClass" name="safeClass">
+            <option value="none">None</option>
+            <option value="1">Class 1</option>
+            <option value="2">Class 2</option>
+            <option value="3">Class 3</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="otherProtection">Other Protection:</label>
+        <select id="otherProtection" name="otherProtection">
+            <option value="fence">Fence</option>
+            <option value="doorsDeadbolt">Doors – deadbolt</option>
+            <option value="windowsBarred">Windows – barred</option>
+            <option value="steelBarsOnOpenings">Steel bars on openings</option>
+            <option value="watchmenSecurityGuards">Watchmen/security guards</option>
+            <option value="guardDog">Guard Dog</option>
+            <option value="additionalCombinationLock">Additional combination lock</option>
+            <option value="alarmFineWireProtectingOpenings">Alarm ‘fine wire’ protecting openings</option>
+            <option value="commonTenantWallsReinforcedWithSteelMesh">Common tenant walls reinforced with steel mesh</option>
+            <option value="entranceVisibleFromStreet">Entrance visible from street</option>
+            <option value="exteriorLighting">Exterior lighting</option>
+            <option value="metalLoadingDoorsSecuredInternally">Metal loading doors, secured internally</option>
+            <option value="multipleLockStyles">Multiple lock styles</option>
+            <option value="propertyLotIlluminatedAtNight">Property/lot illuminated at night</option>
+            <option value="steelPostFrontRearToPreventVehicleEntry">Steel post (front & rear) to prevent vehicle entry</option>
+            <option value="stockroomCeilingEntirelyCoveredByMotionSensor">Stockroom ceiling entirely covered by motion sensor</option>
+            <option value="warningSigns">Warning signs</option>
+            <option value="exteriorOpeningsDoorsDeadbolt">Exterior Openings/Doors – Deadbolt</option>
+            <option value="breakageResistantGlass">Breakage resistant glass</option>
+            <option value="windowsWireMesh">Windows – wire mesh</option>
+            <option value="surveillanceCameras">Surveillance cameras</option>
+            <option value="windowsULCSecurityFilm">Windows – ULC security film</option>
+            <option value="additionalKey">Additional key</option>
+            <option value="cameraWithConcealedVCRRecordingOnFilm">Camera with concealed VCR recording on film</option>
+            <option value="electronicLock">Electronic lock</option>
+            <option value="exteriorDoorsOfSturdyConstructionInsideHinges">Exterior doors of sturdy construction, inside hinges</option>
+            <option value="holdUpButtons">Hold-up buttons</option>
+            <option value="motionSensitiveLighting">Motion sensitive lighting</option>
+            <option value="perimeterFenceAndLockableGate">Perimeter fence and lockable gate</option>
+            <option value="skylightRoofACOpeningsBlockedOff">Skylight/Roof AC openings blocked off</option>
+            <option value="stockSecuredSeparateEnclosure">Stock secured – separate enclosure</option>
+            <option value="warehouseAreaAlarmedSeparatelyFromOffice">Warehouse area alarmed separately from office</option>
+            <option value="windowsGlassBreakageDetectors">Windows – Glass breakage detectors</option>
+        </select>
+    </div>
+</div>
+
+<!-- Occupancy of Building -->
+<div class="form-section">
+    <h2>Occupancy of Building</h2>
+    <div class="form-group">
+        <label for="squareFootageOccupiedByInsured">Square Footage Occupied by the Insured:</label>
+        <input type="text" id="squareFootageOccupiedByInsured" name="squareFootageOccupiedByInsured">
+    </div>
+    <div class="form-group">
+        <label for="occupiedByInsuredAs">Occupied by the Insured as:</label>
+        <select id="occupiedByInsuredAs" name="occupiedByInsuredAs">
+            <option value="tenant">Tenant</option>
+            <option value="owner">Owner</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="squareFootageOccupiedByOtherOccupants">Square Footage Occupied by Other Occupants:</label>
+        <input type="text" id="squareFootageOccupiedByOtherOccupants" name="squareFootageOccupiedByOtherOccupants">
+    </div>
+    <div class="form-group">
+        <label for="otherOccupants">List all other occupants in the building:</label>
+        <textarea id="otherOccupants" name="otherOccupants"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="portionVacantUnoccupied">Is any portion of this building currently vacant/unoccupied?</label>
+        <select id="portionVacantUnoccupied" name="portionVacantUnoccupied">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="squareFootageVacantUnoccupied">If yes, what square footage is vacant/unoccupied?</label>
+        <input type="text" id="squareFootageVacantUnoccupied" name="squareFootageVacantUnoccupied">
+    </div>
+    <div class="form-group">
+        <label for="reasonForVacancyUnoccupancy">If yes, what is the reason for the vacancy/unoccupancy?</label>
+        <textarea id="reasonForVacancyUnoccupancy" name="reasonForVacancyUnoccupancy"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="expectedDurationOfVacancyUnoccupancy">If yes, what is the expected duration of the vacancy/unoccupancy?</label>
+        <input type="text" id="expectedDurationOfVacancyUnoccupancy" name="expectedDurationOfVacancyUnoccupancy">
+    </div>
+</div>
+
+<!-- Exposures -->
+<div class="form-section">
+    <h2>Exposures</h2>
+    <div class="form-group">
+        <label for="distanceInMetersLeft">Distance in Meters (Left of Insured):</label>
+        <input type="text" id="distanceInMetersLeft" name="distanceInMetersLeft">
+    </div>
+    <div class="form-group">
+        <label for="occupancyLeft">Occupancy (Left of Insured):</label>
+        <input type="text" id="occupancyLeft" name="occupancyLeft">
+    </div>
+    <div class="form-group">
+        <label for="distanceInMetersRight">Distance in Meters (Right of Insured):</label>
+        <input type="text" id="distanceInMetersRight" name="distanceInMetersRight">
+    </div>
+    <div class="form-group">
+        <label for="occupancyRight">Occupancy (Right of Insured):</label>
+        <input type="text" id="occupancyRight" name="occupancyRight">
+    </div>
+    <div class="form-group">
+        <label for="distanceInMetersBehind">Distance in Meters (Behind Insured):</label>
+        <input type="text" id="distanceInMetersBehind" name="distanceInMetersBehind">
+    </div>
+    <div class="form-group">
+        <label for="occupancyBehind">Occupancy (Behind Insured):</label>
+        <input type="text" id="occupancyBehind" name="occupancyBehind">
+    </div>
+    <div class="form-group">
+        <label for="distanceInMetersFront">Distance in Meters (Front of Insured):</label>
+        <input type="text" id="distanceInMetersFront" name="distanceInMetersFront">
+    </div>
+    <div class="form-group">
+        <label for="occupancyFront">Occupancy (Front of Insured):</label>
+        <input type="text" id="occupancyFront" name="occupancyFront">
+    </div>
+    <div class="form-group">
+        <label for="clearAllDirections">Clear all directions:</label>
+        <input type="text" id="clearAllDirections" name="clearAllDirections">
+    </div>
+    <div class="form-group">
+        <label for="exposuresUnknown">Exposures unknown:</label>
+        <input type="text" id="exposuresUnknown" name="exposuresUnknown">
+    </div>
+</div>
+
+<!-- Schedule of Coverage -->
+<div class="form-section">
+    <h2>Schedule of Coverage</h2>
+    <div class="form-group">
+        <label for="deductible">Deductible:</label>
+        <input type="text" id="deductible" name="deductible">
+    </div>
+    <div class="form-group">
+        <label for="coIns">Co-Ins:</label>
+        <input type="text" id="coIns" name="coIns">
+    </div>
+    <div class="form-group">
+        <label for="limit">Limit:</label>
+        <input type="text" id="limit" name="limit">
+    </div>
+    <div class="form-group">
+        <label for="basisOfLossSettlement">Basis of Loss Settlement:</label>
+        <select id="basisOfLossSettlement" name="basisOfLossSettlement">
+            <option value="actualCashValue">Actual Cash Value (Replacement Cost Less Depreciation)</option>
+            <option value="replacementCost">Replacement Cost (Excluding Stock)</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="deleteSameSiteAdjacentSiteClause">Delete Same Site/Adjacent Site Clause (Building):</label>
+        <input type="text" id="deleteSameSiteAdjacentSiteClause" name="deleteSameSiteAdjacentSiteClause">
+    </div>
+    <div class="form-group">
+        <label for="sewerBackUp">Sewer Back-Up:</label>
+        <input type="text" id="sewerBackUp" name="sewerBackUp">
+    </div>
+    <div class="form-group">
+        <label for="flood">Flood:</label>
+        <input type="text" id="flood" name="flood">
+    </div>
+    <div class="form-group">
+        <label for="earthquake">Earthquake:</label>
+        <input type="text" id="earthquake" name="earthquake">
+    </div>
+    <div class="form-group">
+        <label for="blanketCoverageRequired">Blanket Coverage Required:</label>
+        <input type="text" id="blanketCoverageRequired" name="blanketCoverageRequired">
+    </div>
+    <div class="form-group">
+        <label for="statedAmountWaiverOfCoInsurance">Stated Amount/Waiver of Co-Insurance:</label>
+        <input type="text" id="statedAmountWaiverOfCoInsurance" name="statedAmountWaiverOfCoInsurance">
+    </div>
+    <div class="form-group">
+        <label for="byLawsBuilding">By-Laws (Building):</label>
+        <input type="text" id="byLawsBuilding" name="byLawsBuilding">
+    </div>
+    <div class="form-group">
+        <label for="extensionEndorsement">Extension Endorsement – Include Broadest Extensions:</label>
+        <input type="text" id="extensionEndorsement" name="extensionEndorsement">
+    </div>
+</div>
+
+<!-- Property Coverage -->
+<div class="form-section">
+    <h2>Property Coverage</h2>
+    <div class="form-group">
+        <label for="building">Building:</label>
+        <input type="text" id="building" name="building">
+    </div>
+    <div class="form-group">
+        <label for="contents">Contents:</label>
+        <input type="text" id="contents" name="contents">
+    </div>
+    <div class="form-group">
+        <label for="equipment">Equipment:</label>
+        <input type="text" id="equipment" name="equipment">
+    </div>
+    <div class="form-group">
+        <label for="tenantsImprovements">Tenant’s Improvements:</label>
+        <input type="text" id="tenantsImprovements" name="tenantsImprovements">
+    </div>
+    <div class="form-group">
+        <label for="stockACV">Stock (ACV):</label>
+        <input type="text" id="stockACV" name="stockACV">
+    </div>
+    <div class="form-group">
+        <label for="consequentialLossSpoilageExtension">Consequential Loss (Spoilage) Extension, Including Off Premises:</label>
+        <input type="text" id="consequentialLossSpoilageExtension" name="consequentialLossSpoilageExtension">
+    </div>
+    <div class="form-group">
+        <label for="serviceInterruption">Service Interruption – Applicable to Perishable Stock:</label>
+        <input type="text" id="serviceInterruption" name="serviceInterruption">
+    </div>
+    <div class="form-group">
+        <label for="requiredSubLimit">Required Sub-Limit:</label>
+        <input type="text" id="requiredSubLimit" name="requiredSubLimit">
+    </div>
+    <div class="form-group">
+        <label for="officeContents">Office Contents:</label>
+        <input type="text" id="officeContents" name="officeContents">
+    </div>
+    <div class="form-group">
+        <label for="customersGoodsACV">Customers’ Goods (ACV):</label>
+        <input type="text" id="customersGoodsACV" name="customersGoodsACV">
+    </div>
+    <div class="form-group">
+        <label for="mouldsDiesPatterns">Moulds, Dies, Patterns:</label>
+        <input type="text" id="mouldsDiesPatterns" name="mouldsDiesPatterns">
+    </div>
+    <div class="form-group">
+        <label for="jewelsJewelleryFursFurGarments">Jewels, Jewellery, Furs, Fur Garments (Named Perils coverage only):</label>
+        <input type="text" id="jewelsJewelleryFursFurGarments" name="jewelsJewelleryFursFurGarments">
+    </div>
+    <div class="form-group">
+        <label for="other1">Other:</label>
+        <input type="text" id="other1" name="other1">
+    </div>
+    <div class="form-group">
+        <label for="other2">Other:</label>
+        <input type="text" id="other2" name="other2">
+    </div>
+</div>
+
+<!-- Commercial Condominium Unit Owners Coverage -->
+<div class="form-section">
+    <h2>Commercial Condominium Unit Owners Coverage</h2>
+    <div class="form-group">
+        <label for="coverageA">Coverage A – Contingent Condominium Unit Coverage:</label>
+        <input type="text" id="coverageA" name="coverageA">
+    </div>
+    <div class="form-group">
+        <label for="coverageB">Coverage B – Loss Assessments:</label>
+        <input type="text" id="coverageB" name="coverageB">
+    </div>
+    <div class="form-group">
+        <label for="coverageC">Coverage C – Betterments & Improvements:</label>
+        <input type="text" id="coverageC" name="coverageC">
+    </div>
+</div>
+
+<!-- Commercial Condominium Corporation Coverage -->
+<div class="form-section">
+    <h2>Commercial Condominium Corporation Coverage</h2>
+    <div class="form-group">
+        <label for="commercialCondominiumCorporationBroadForm">Commercial Condominium Corporation - Broad Form:</label>
+        <input type="text" id="commercialCondominiumCorporationBroadForm" name="commercialCondominiumCorporationBroadForm">
+    </div>
+</div>
+
+<!-- Residential Condominium Corporation Coverage -->
+<div class="form-section">
+    <h2>Residential Condominium Corporation Coverage</h2>
+    <div class="form-group">
+        <label for="residentialCondominiumCorporationBroadForm">Residential Condominium Corporation - Broad Form:</label>
+        <input type="text" id="residentialCondominiumCorporationBroadForm" name="residentialCondominiumCorporationBroadForm">
+    </div>
+</div>
+
+<!-- Electronic Data Processing Systems -->
+<div class="form-section">
+    <h2>Electronic Data Processing Systems</h2>
+    <div class="form-group">
+        <label for="electronicDataProcessingSystems">Electronic Data Processing Systems (Including Breakdown Coverage):</label>
+        <input type="text" id="electronicDataProcessingSystems" name="electronicDataProcessingSystems">
+    </div>
+    <div class="form-group">
+        <label for="coverageRequiredForOffPremisesLaptops">Coverage Required For Off Premises Laptops:</label>
+        <input type="text" id="coverageRequiredForOffPremisesLaptops" name="coverageRequiredForOffPremisesLaptops">
+    </div>
+    <div class="form-group">
+        <label for="numberOfLaptops">Number of Laptops:</label>
+        <input type="text" id="numberOfLaptops" name="numberOfLaptops">
+    </div>
+    <div class="form-group">
+        <label for="valueOfLaptops">Value of Laptop(s) – Included in above Equipment Limit:</label>
+        <input type="text" id="valueOfLaptops" name="valueOfLaptops">
+    </div>
+</div>
+
+<!-- Sign Floater -->
+<div class="form-section">
+    <h2>Sign Floater</h2>
+    <div class="form-group">
+        <label for="signFloater">Sign Floater:</label>
+        <input type="text" id="signFloater" name="signFloater">
+    </div>
+</div>
+
+<!-- Contractor’s Equipment Floater -->
+<div class="form-section">
+    <h2>Contractor’s Equipment Floater</h2>
+    <div class="form-group">
+        <label for="contractorsEquipmentFloater">Contractor’s Equipment Floater – Schedule Required If Binding:</label>
+        <input type="text" id="contractorsEquipmentFloater" name="contractorsEquipmentFloater">
+    </div>
+    <div class="form-group">
+        <label for="rcTypicallyProvidedOnItems5YearsOldNewer">RC – Typically provided on items 5 years old & newer:</label>
+        <input type="text" id="rcTypicallyProvidedOnItems5YearsOldNewer" name="rcTypicallyProvidedOnItems5YearsOldNewer">
+    </div>
+    <div class="form-group">
+        <label for="rentedBorrowedEquipmentExtension">Rented/Borrowed Equipment Extension:</label>
+        <input type="text" id="rentedBorrowedEquipmentExtension" name="rentedBorrowedEquipmentExtension">
+    </div>
+    <div class="form-group">
+        <label for="rentalChargeReImbursementForSubstitutes">Rental Charge Re-Imbursement for Substitutes:</label>
+        <input type="text" id="rentalChargeReImbursementForSubstitutes" name="rentalChargeReImbursementForSubstitutes">
+    </div>
+    <div class="form-group">
+        <label for="contractorsLossOfIncome">Contractors Loss of Income:</label>
+        <input type="text" id="contractorsLossOfIncome" name="contractorsLossOfIncome">
+    </div>
+    <div class="form-group">
+        <label for="permissionToRentLoanInsuredsEquipmentToOtherContractors">Permission to Rent/Loan Insured’s Equipment to Other Contractors:</label>
+        <input type="text" id="permissionToRentLoanInsuredsEquipmentToOtherContractors" name="permissionToRentLoanInsuredsEquipmentToOtherContractors">
+    </div>
+</div>
+
+<!-- Tool Floater -->
+<div class="form-section">
+    <h2>Tool Floater</h2>
+    <div class="form-group">
+        <label for="toolFloater">Tool Floater:</label>
+        <input type="text" id="toolFloater" name="toolFloater">
+    </div>
+    <div class="form-group">
+        <label for="totalValueOfItemsNotExceeding1500AnyOneItemSet">Total Value of Items Not Exceeding $1,500 Any One Item/Set:</label>
+        <input type="text" id="totalValueOfItemsNotExceeding1500AnyOneItemSet" name="totalValueOfItemsNotExceeding1500AnyOneItemSet">
+    </div>
+    <div class="form-group">
+        <label for="totalValueOfItemsExceeding1500AnyOneItemSet">Total Value of Items Exceeding $1,500 Any One Item/Set:</label>
+        <input type="text" id="totalValueOfItemsExceeding1500AnyOneItemSet" name="totalValueOfItemsExceeding1500AnyOneItemSet">
+    </div>
+    <div class="form-group">
+        <label for="rcTypicallyProvidedOnItems3YearsOldNewer">RC – Typically provided on items 3 years old & newer:</label>
+        <input type="text" id="rcTypicallyProvidedOnItems3YearsOldNewer" name="rcTypicallyProvidedOnItems3YearsOldNewer">
+    </div>
+</div>
+
+<!-- Miscellaneous Property Floater -->
+<div class="form-section">
+    <h2>Miscellaneous Property Floater</h2>
+    <div class="form-group">
+        <label for="miscellaneousPropertyFloater">Miscellaneous Property Floater – Schedule of Items Required:</label>
+        <input type="text" id="miscellaneousPropertyFloater" name="miscellaneousPropertyFloater">
+    </div>
+</div>
+
+<!-- Transportation Floater -->
+<div class="form-section">
+    <h2>Transportation Floater</h2>
+    <div class="form-group">
+        <label for="transportationFloater">Transportation Floater (Covers property of the Insured, while in Insured’s own vehicles or while in the custody of a common carrier):</label>
+        <input type="text" id="transportationFloater" name="transportationFloater">
+    </div>
+</div>
+
+<!-- Motor Truck Cargo -->
+<div class="form-section">
+    <h2>Motor Truck Cargo</h2>
+    <div class="form-group">
+        <label for="motorTruckCargo">Motor Truck Cargo – Attach Schedule of Vehicles:</label>
+        <input type="text" id="motorTruckCargo" name="motorTruckCargo">
+    </div>
+    <div class="form-group">
+        <label for="ownersForm">Owner’s Form (Property of Insured, being transported in Insured’s vehicles):</label>
+        <input type="text" id="ownersForm" name="ownersForm">
+    </div>
+    <div class="form-group">
+        <label for="truckmensForm">Truckmen’s Form (Property of others, being transported by Insured):</label>
+        <input type="text" id="truckmensForm" name="truckmensForm">
+    </div>
+    <div class="form-group">
+        <label for="maximumRadius">Maximum Radius:</label>
+        <input type="text" id="maximumRadius" name="maximumRadius">
+    </div>
+    <div class="form-group">
+        <label for="includeLoadingAndUnloading">Include Loading & Unloading:</label>
+        <input type="text" id="includeLoadingAndUnloading" name="includeLoadingAndUnloading">
+    </div>
+    <div class="form-group">
+        <label for="includeReeferBreakdownSpoilage">Include Reefer Breakdown (Spoilage):</label>
+        <input type="text" id="includeReeferBreakdownSpoilage" name="includeReeferBreakdownSpoilage">
+    </div>
+    <div class="form-group">
+        <label for="requiredLimit">Required Limit:</label>
+        <input type="text" id="requiredLimit" name="requiredLimit">
+    </div>
+    <div class="form-group">
+        <label for="isEquipmentEquippedWithTemperatureRiseAlarms">Is the equipment equipped with temperature rise alarms?</label>
+        <input type="text" id="isEquipmentEquippedWithTemperatureRiseAlarms" name="isEquipmentEquippedWithTemperatureRiseAlarms">
+    </div>
+</div>
+
+<!-- Builders Risk/COC (Course of Construction) -->
+<div class="form-section">
+    <h2>Builders Risk/COC (Course of Construction)</h2>
+    <div class="form-group">
+        <label for="buildersRiskCOC">Builders Risk/COC (Course of Construction) – Separate Application Required:</label>
+        <input type="text" id="buildersRiskCOC" name="buildersRiskCOC">
+    </div>
+</div>
+
+<!-- Installation Floater -->
+<div class="form-section">
+    <h2>Installation Floater</h2>
+    <div class="form-group">
+        <label for="installationFloater">Installation Floater:</label>
+        <input type="text" id="installationFloater" name="installationFloater">
+    </div>
+    <div class="form-group">
+        <label for="anyOneProjectSite">Any One Project Site:</label>
+        <input type="text" id="anyOneProjectSite" name="anyOneProjectSite">
+    </div>
+    <div class="form-group">
+        <label for="transit">Transit:</label>
+        <input type="text" id="transit" name="transit">
+    </div>
+    <div class="form-group">
+        <label for="anyOtherLocation">Any Other Location:</label>
+        <input type="text" id="anyOtherLocation" name="anyOtherLocation">
+    </div>
+</div>
+
+<!-- Bailees’ Customers -->
+<div class="form-section">
+    <h2>Bailees’ Customers</h2>
+    <div class="form-group">
+        <label for="baileesCustomersACV">Bailees’ Customers (ACV):</label>
+        <input type="text" id="baileesCustomersACV" name="baileesCustomersACV">
+    </div>
+    <div class="form-group">
+        <label for="baileesCustomersBroadForm">Broad Form:</label>
+        <input type="text" id="baileesCustomersBroadForm" name="baileesCustomersBroadForm">
+    </div>
+    <div class="form-group">
+        <label for="baileesCustomersNamedPerils">Named Perils:</label>
+        <input type="text" id="baileesCustomersNamedPerils" name="baileesCustomersNamedPerils">
+    </div>
+</div>
+
+<!-- Jeweller’s Block -->
+<div class="form-section">
+    <h2>Jeweller’s Block</h2>
+    <div class="form-group">
+        <label for="jewellersBlock">Jeweller’s Block – Separate Application Required:</label>
+        <input type="text" id="jewellersBlock" name="jewellersBlock">
+    </div>
+</div>
+
+<!-- Other -->
+<div class="form-section">
+    <h2>Other</h2>
+    <div class="form-group">
+        <label for="other3">Other:</label>
+        <input type="text" id="other3" name="other3">
+    </div>
+    <div class="form-group">
+        <label for="other4">Other:</label>
+        <input type="text" id="other4" name="other4">
+    </div>
+</div>
+
+<!-- Business Interruption -->
+<div class="form-section">
+    <h2>Business Interruption</h2>
+    <div class="form-group">
+        <label for="profitsActualLossSustained">Profits - Actual Loss Sustained:</label>
+        <input type="text" id="profitsActualLossSustained" name="profitsActualLossSustained">
+    </div>
+    <div class="form-group">
+        <label for="periodOfIndemnity">Period of Indemnity:</label>
+        <select id="periodOfIndemnity" name="periodOfIndemnity">
+            <option value="12Months">12 Months (Standard)</option>
+            <option value="18Months">18 Months</option>
+            <option value="24Months">24 Months</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="includeOrdinaryPayroll">Include Ordinary Payroll:</label>
+        <select id="includeOrdinaryPayroll" name="includeOrdinaryPayroll">
+            <option value="90Days">90 Days</option>
+            <option value="180Days">180 Days</option>
+            <option value="na">N/A</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="offPremisesServicesUtilitiesInterruptionExtension">Off Premises Services/Utilities Interruption Extension:</label>
+        <input type="text" id="offPremisesServicesUtilitiesInterruptionExtension" name="offPremisesServicesUtilitiesInterruptionExtension">
+    </div>
+    <div class="form-group">
+        <label for="contingentLossOfIncomeRecipientProperties">Contingent Loss of Income - Recipient Properties:</label>
+        <input type="text" id="contingentLossOfIncomeRecipientProperties" name="contingentLossOfIncomeRecipientProperties">
+    </div>
+    <div class="form-group">
+        <label for="contingentLossOfIncomeContributingProperties">Contingent Loss of Income – Contributing Properties:</label>
+        <input type="text" id="contingentLossOfIncomeContributingProperties" name="contingentLossOfIncomeContributingProperties">
+    </div>
+    <div class="form-group">
+        <label for="profitsSpecifiedLimit">Profits – Specified Limit:</label>
+        <input type="text" id="profitsSpecifiedLimit" name="profitsSpecifiedLimit">
+    </div>
+</div>
+
+<!-- Equipment Breakdown -->
+<div class="form-section">
+    <h2>Equipment Breakdown</h2>
+    <div class="form-group">
+        <label for="equipmentBreakdownQuoteBroadcastCoverage">Equipment Breakdown – Quote Broadcast Coverage:</label>
+        <input type="text" id="equipmentBreakdownQuoteBroadcastCoverage" name="equipmentBreakdownQuoteBroadcastCoverage">
+    </div>
+    <div class="form-group">
+        <label for="deductibleEquipmentBreakdown">Deductible:</label>
+        <input type="text" id="deductibleEquipmentBreakdown" name="deductibleEquipmentBreakdown">
+    </div>
+    <div class="form-group">
+        <label for="limitEquipmentBreakdown">Limit:</label>
+        <input type="text" id="limitEquipmentBreakdown" name="limitEquipmentBreakdown">
+    </div>
+    <div class="form-group">
+        <label for="includeProductionMachinery">Include Production Machinery:</label>
+        <input type="text" id="includeProductionMachinery" name="includeProductionMachinery">
+    </div>
+    <div class="form-group">
+        <label for="includeConsequentialLossSpoilage">Include Consequential Loss (Spoilage) as a result of equipment breakdown:</label>
+        <input type="text" id="includeConsequentialLossSpoilage" name="includeConsequentialLossSpoilage">
+    </div>
+    <div class="form-group">
+        <label for="requiredLimitConsequentialLossSpoilage">Required Limit:</label>
+        <input type="text" id="requiredLimitConsequentialLossSpoilage" name="requiredLimitConsequentialLossSpoilage">
+    </div>
+    <div class="form-group">
+        <label for="isEquipmentEquippedWithTemperatureRiseAlarms">Is equipment equipped with temperature rise alarms?</label>
+        <input type="text" id="isEquipmentEquippedWithTemperatureRiseAlarms" name="isEquipmentEquippedWithTemperatureRiseAlarms">
+    </div>
+    <div class="form-group">
+        <label for="areAlarmsMonitored">Are the alarms monitored?</label>
+        <input type="text" id="areAlarmsMonitored" name="areAlarmsMonitored">
+    </div>
+    <div class="form-group">
+        <label for="isThereBackUpPower">Is there back-up power?</label>
+        <input type="text" id="isThereBackUpPower" name="isThereBackUpPower">
+    </div>
+    <div class="form-group">
+        <label for="businessInterruptionFollowForms">Business Interruption Follow Forms:</label>
+        <input type="text" id="businessInterruptionFollowForms" name="businessInterruptionFollowForms">
+    </div>
+</div>
+
+<!-- Cyber/Privacy Breach -->
+<div class="form-section">
+    <h2>Cyber/Privacy Breach</h2>
+    <div class="form-group">
+        <label for="cyberPrivacyBreach">Cyber/Privacy Breach – Please quote available options:</label>
+        <input type="text" id="cyberPrivacyBreach" name="cyberPrivacyBreach">
+    </div>
+</div>
+
+<!-- Legal Advice & Legal Expense -->
+<div class="form-section">
+    <h2>Legal Advice & Legal Expense</h2>
+    <div class="form-group">
+        <label for="legalAdvice">Legal Advice:</label>
+        <input type="text" id="legalAdvice" name="legalAdvice">
+    </div>
+    <div class="form-group">
+        <label for="legalExpense">Legal Expense:</label>
+        <input type="text" id="legalExpense" name="legalExpense">
+    </div>
+</div>
+
+<!-- Crime -->
+<div class="form-section">
+    <h2>Crime</h2>
+    <div class="form-group">
+        <label for="comprehensive3D">Comprehensive 3D - Includes:</label>
+        <input type="text" id="comprehensive3D" name="comprehensive3D">
+    </div>
+    <div class="form-group">
+        <label for="employeeDishonesty">Employee Dishonesty:</label>
+        <input type="text" id="employeeDishonesty" name="employeeDishonesty">
+    </div>
+    <div class="form-group">
+        <label for="formA">Form A - One limit applies per loss, regardless of number of employees involved:</label>
+        <input type="text" id="formA" name="formA">
+    </div>
+    <div class="form-group">
+        <label for="formB">Form B – Limit is per Employee:</label>
+        <input type="text" id="formB" name="formB">
+    </div>
+    <div class="form-group">
+        <label for="thirdPartyClientExtension">Third Party/Client Extension:</label>
+        <input type="text" id="thirdPartyClientExtension" name="thirdPartyClientExtension">
+    </div>
+    <div class="form-group">
+        <label for="lossInsideThePremises">Loss Inside the Premises:</label>
+        <input type="text" id="lossInsideThePremises" name="lossInsideThePremises">
+    </div>
+    <div class="form-group">
+        <label for="lossOutsideThePremises">Loss Outside the Premises:</label>
+        <input type="text" id="lossOutsideThePremises" name="lossOutsideThePremises">
+    </div>
+    <div class="form-group">
+        <label for="moneyOrdersCounterfeitPaperCurrency">Money Orders & Counterfeit Paper Currency:</label>
+        <input type="text" id="moneyOrdersCounterfeitPaperCurrency" name="moneyOrdersCounterfeitPaperCurrency">
+    </div>
+    <div class="form-group">
+        <label for="depositorsForgery">Depositor’s Forgery:</label>
+        <input type="text" id="depositorsForgery" name="depositorsForgery">
+    </div>
+    <div class="form-group">
+        <label for="socialEngineeringFraud">Social Engineering Fraud:</label>
+        <input type="text" id="socialEngineeringFraud" name="socialEngineeringFraud">
+    </div>
+    <div class="form-group">
+        <label for="other5">Other:</label>
+        <input type="text" id="other5" name="other5">
+    </div>
+</div>
+
+<!-- Liability -->
+<div class="form-section">
+    <h2>Liability</h2>
+    <div class="form-group">
+        <label for="commercialGeneralLiability">Commercial General Liability (Occurrence Form):</label>
+        <input type="text" id="commercialGeneralLiability" name="commercialGeneralLiability">
+    </div>
+    <div class="form-group">
+        <label for="deductibleLiability">Deductible:</label>
+        <input type="text" id="deductibleLiability" name="deductibleLiability">
+    </div>
+    <div class="form-group">
+        <label for="limitLiability">Limit:</label>
+        <input type="text" id="limitLiability" name="limitLiability">
+    </div>
+    <div class="form-group">
+        <label for="deductiblePropertyDamageOnly">Deductible: Property Damage Only:</label>
+        <input type="text" id="deductiblePropertyDamageOnly" name="deductiblePropertyDamageOnly">
+    </div>
+    <div class="form-group">
+        <label for="deductibleCombinedPropertyDamageBodilyInjury">Deductible: Combined Property Damage & Bodily Injury:</label>
+        <input type="text" id="deductibleCombinedPropertyDamageBodilyInjury" name="deductibleCombinedPropertyDamageBodilyInjury">
+    </div>
+    <div class="form-group">
+        <label for="standardCGLExtensions">Standard CGL Extensions:</label>
+        <input type="text" id="standardCGLExtensions" name="standardCGLExtensions">
+    </div>
+    <div class="form-group">
+        <label for="15DaysNoticeOfCancellationByInsurer">15 Days Notice of Cancellation by Insurer:</label>
+        <input type="text" id="15DaysNoticeOfCancellationByInsurer" name="15DaysNoticeOfCancellationByInsurer">
+    </div>
+    <div class="form-group">
+        <label for="personalInjury">Personal Injury (ie libel, slander, false arrest of a third party):</label>
+        <input type="text" id="personalInjury" name="personalInjury">
+    </div>
+    <div class="form-group">
+        <label for="advertisingInjury">Advertising Injury (ie copyright infringement, misappropriation of advertising ideas):</label>
+        <input type="text" id="advertisingInjury" name="advertisingInjury">
+    </div>
+    <div class="form-group">
+        <label for="medicalPayments">Medical Payments:</label>
+        <input type="text" id="medicalPayments" name="medicalPayments">
+    </div>
+    <div class="form-group">
+        <label for="employeesVolunteersAsInsureds">Employees & Volunteers as Insureds:</label>
+        <input type="text" id="employeesVolunteersAsInsureds" name="employeesVolunteersAsInsureds">
+    </div>
+    <div class="form-group">
+        <label for="broadFormPropertyDamage">Broad Form Property Damage:</label>
+        <input type="text" id="broadFormPropertyDamage" name="broadFormPropertyDamage">
+    </div>
+    <div class="form-group">
+        <label for="broadFormAutomobile">Broad Form Automobile (Covers attached machinery, unlicensed vehicles, ie, front loaders, etc.):</label>
+        <input type="text" id="broadFormAutomobile" name="broadFormAutomobile">
+    </div>
+    <div class="form-group">
+        <label for="occurrenceBasisPropertyDamage">Occurrence Basis Property Damage:</label>
+        <input type="text" id="occurrenceBasisPropertyDamage" name="occurrenceBasisPropertyDamage">
+    </div>
+    <div class="form-group">
+        <label for="hostLiquorLiability">Host Liquor Liability:</label>
+        <input type="text" id="hostLiquorLiability" name="hostLiquorLiability">
+    </div>
+    <div class="form-group">
+        <label for="blanketWrittenContractual">Blanket Written Contractual:</label>
+        <input type="text" id="blanketWrittenContractual" name="blanketWrittenContractual">
+    </div>
+    <div class="form-group">
+        <label for="nonOwnedWatercraftLessThan8Metres">Non Owned Watercraft (Less than 8 Metres):</label>
+        <input type="text" id="nonOwnedWatercraftLessThan8Metres" name="nonOwnedWatercraftLessThan8Metres">
+    </div>
+    <div class="form-group">
+        <label for="contingentEmployersLiability">Contingent Employers Liability (Applies when employees are covered under WSIB, but are denied WSIB benefits – ie – employees temporarily away from their own province or subrogation claims by WSIB):</label>
+        <input type="text" id="contingentEmployersLiability" name="contingentEmployersLiability">
+    </div>
+    <div class="form-group">
+        <label for="crossLiabilitySeverabilityOfInsured">Cross Liability, Severability of Insured:</label>
+        <input type="text" id="crossLiabilitySeverabilityOfInsured" name="crossLiabilitySeverabilityOfInsured">
+    </div>
+    <div class="form-group">
+        <label for="ownerAndContractorProtective">Owner and Contractor Protective (Covers the insured for vicarious liability arising out of operations performed on his behalf by an independent contractor. Also responds to acts or omissions of the Insured in connection with his supervision of the contractor’s operations):</label>
+        <input type="text" id="ownerAndContractorProtective" name="ownerAndContractorProtective">
+    </div>
+    <div class="form-group">
+        <label for="tenantsLegalLiability">Tenant’s Legal Liability - Square Footage Occupied by Insured as Tenant - (Covers legal liability for damage to space the Insured is occupying as a tenant. Limit must reflect the same value that it would cost to rebuild the space the Insured is occupying):</label>
+        <input type="text" id="tenantsLegalLiability" name="tenantsLegalLiability">
+    </div>
+    <div class="form-group">
+        <label for="nonOwnedAutomobileSPF6">Non-Owned Automobile (SPF 6) – Must be specifically requested below:</label>
+        <input type="text" id="nonOwnedAutomobileSPF6" name="nonOwnedAutomobileSPF6">
+    </div>
+    <div class="form-group">
+        <label for="30DaysNoticeOfCancellationByInsurer">30 Days Notice of Cancellation by Insurer:</label>
+        <input type="text" id="30DaysNoticeOfCancellationByInsurer" name="30DaysNoticeOfCancellationByInsurer">
+    </div>
+    <div class="form-group">
+        <label for="60DaysNoticeOfCancellationByInsurer">60 Days Notice of Cancellation by Insurer:</label>
+        <input type="text" id="60DaysNoticeOfCancellationByInsurer" name="60DaysNoticeOfCancellationByInsurer">
+    </div>
+    <div class="form-group">
+        <label for="waiverOfSubrogationInFavourOf">Waiver of Subrogation – In favour of:</label>
+        <input type="text" id="waiverOfSubrogationInFavourOf" name="waiverOfSubrogationInFavourOf">
+    </div>
+    <div class="form-group">
+        <label for="employersBodilyInjury">Employers’ Bodily Injury (Provides primary liability coverage when employees are not subject to WSIB...eg..clerical employees):</label>
+        <input type="text" id="employersBodilyInjury" name="employersBodilyInjury">
+    </div>
+    <div class="form-group">
+        <label for="holdHarmlessClauseInFavourOf">Hold Harmless Clause – In favour of:</label>
+        <input type="text" id="holdHarmlessClauseInFavourOf" name="holdHarmlessClauseInFavourOf">
+    </div>
+    <div class="form-group">
+        <label for="voluntaryCompensationForEmployees">Voluntary Compensation for Employees (written in addition to Employers’ Liability):</label>
+        <input type="text" id="voluntaryCompensationForEmployees" name="voluntaryCompensationForEmployees">
+    </div>
+    <div class="form-group">
+        <label for="employeeBenefitsEO">Employee Benefits E&O:</label>
+        <input type="text" id="employeeBenefitsEO" name="employeeBenefitsEO">
+    </div>
+    <div class="form-group">
+        <label for="failureToPerform">Failure to Perform (ie Protective/Security Services):</label>
+        <input type="text" id="failureToPerform" name="failureToPerform">
+    </div>
+    <div class="form-group">
+        <label for="garageExtension">Garage Extension:</label>
+        <input type="text" id="garageExtension" name="garageExtension">
+    </div>
+    <div class="form-group">
+        <label for="craneHotelOperatorsLiability">Crane/Hotel Operators Liability (Also referred to as Rigger’s/Hook Liability) (Renoves the cee exclusion and protects a contractor for liability for damage to property of others, while such property is being moved/lifted with a crane, hoist, or other similar equipment...ie... lifting an air conditioner onto roof with crane):</label>
+        <input type="text" id="craneHotelOperatorsLiability" name="craneHotelOperatorsLiability">
+    </div>
+    <div class="form-group">
+        <label for="numberOfExpectedJobsPerYear">Number of Expected Jobs per Year:</label>
+        <input type="text" id="numberOfExpectedJobsPerYear" name="numberOfExpectedJobsPerYear">
+    </div>
+    <div class="form-group">
+        <label for="averageAmountOfLift">Average Amount of Lift $:</label>
+        <input type="text" id="averageAmountOfLift" name="averageAmountOfLift">
+    </div>
+    <div class="form-group">
+        <label for="maximumAmountOfLift">Maximum Amount of Lift $:</label>
+        <input type="text" id="maximumAmountOfLift" name="maximumAmountOfLift">
+    </div>
+    <div class="form-group">
+        <label for="requiredLimitCraneHotelOperatorsLiability">Required Limit $:</label>
+        <input type="text" id="requiredLimitCraneHotelOperatorsLiability" name="requiredLimitCraneHotelOperatorsLiability">
+    </div>
+    <div class="form-group">
+        <label for="hoistCollision">Hoist Collision:</label>
+        <input type="text" id="hoistCollision" name="hoistCollision">
+    </div>
+    <div class="form-group">
+        <label for="productRecallExpenses">Product Recall Expenses:</label>
+        <input type="text" id="productRecallExpenses" name="productRecallExpenses">
+    </div>
+    <div class="form-group">
+        <label for="removalOfXCUExclusion">Removal of XCU Exclusion (Explosion, Collapse, Underpinning):</label>
+        <input type="text" id="removalOfXCUExclusion" name="removalOfXCUExclusion">
+    </div>
+    <div class="form-group">
+        <label for="broadFormVendors">Broad Form Vendors (Coverage extends to vendors who sell Insured’s product):</label>
+        <input type="text" id="broadFormVendors" name="broadFormVendors">
+    </div>
+    <div class="form-group">
+        <label for="innkeepersLiabilityExtension">Innkeepers Liability Extension:</label>
+        <input type="text" id="innkeepersLiabilityExtension" name="innkeepersLiabilityExtension">
+    </div>
+    <div class="form-group">
+        <label for="abuseSupplementalApplicationRequired">Abuse (Supplemental Application Required):</label>
+        <input type="text" id="abuseSupplementalApplicationRequired" name="abuseSupplementalApplicationRequired">
+    </div>
+    <div class="form-group">
+        <label for="ripAndTear">Rip & Tear (Covers labour costs to remove/replace building materials installed and deemed defective):</label>
+        <input type="text" id="ripAndTear" name="ripAndTear">
+    </div>
+    <div class="form-group">
+        <label for="manufacturersEO">Manufacturer’s E&O:</label>
+        <input type="text" id="manufacturersEO" name="manufacturersEO">
+    </div>
+    <div class="form-group">
+        <label for="broadFormProducts">Broad Form Products:</label>
+        <input type="text" id="broadFormProducts" name="broadFormProducts">
+    </div>
+    <div class="form-group">
+        <label for="broadFormCompletedOperations">Broad Form Completed Operations (in the event of property damage resulting from a portion of the Insured’s work, only the faulty portion of the Insured’s work is excluded, not all of the work):</label>
+        <input type="text" id="broadFormCompletedOperations" name="broadFormCompletedOperations">
+    </div>
+    <div class="form-group">
+        <label for="limitedPollutionLiabilitySuddenAccidental">Limited Pollution Liability/Sudden & Accidental (Covers unexpected/numerational discharges that is detected and reported to the company within 120 hours. If exposure is low, companies will often offer this extension. Otherwise, apply for separate Pollution Liability Coverage below):</label>
+        <input type="text" id="limitedPollutionLiabilitySuddenAccidental" name="limitedPollutionLiabilitySuddenAccidental">
+    </div>
+    <div class="form-group">
+        <label for="other6">Other:</label>
+        <input type="text" id="other6" name="other6">
+    </div>
+    <div class="form-group">
+        <label for="other7">Other:</label>
+        <input type="text" id="other7" name="other7">
+    </div>
+    <div class="form-group">
+        <label for="nonOwnedAutomobileLiabilitySPF6">Non-Owned Automobile Liability (SPF 6):</label>
+        <input type="text" id="nonOwnedAutomobileLiabilitySPF6" name="nonOwnedAutomobileLiabilitySPF6">
+    </div>
+</div>
+
+<!-- Professional Liability -->
+<div class="form-section">
+    <h2>Professional Liability</h2>
+    <div class="form-group">
+        <label for="professionalLiability">Professional Liability - Separate Application Required:</label>
+        <input type="text" id="professionalLiability" name="professionalLiability">
+    </div>
+    <div class="form-group">
+        <label for="deductibleProfessionalLiability">Deductible:</label>
+        <input type="text" id="deductibleProfessionalLiability" name="deductibleProfessionalLiability">
+    </div>
+    <div class="form-group">
+        <label for="limitProfessionalLiability">Limit:</label>
+        <input type="text" id="limitProfessionalLiability" name="limitProfessionalLiability">
+    </div>
+    <div class="form-group">
+        <label for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDate">If Insured has a current Claims Made policy in force, what is Retro Date?</label>
+        <input type="text" id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDate" name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDate">
+    </div>
+</div>
+
+<!-- Directors & Officers Liability -->
+<div class="form-section">
+    <h2>Directors & Officers Liability</h2>
+    <div class="form-group">
+        <label for="directorsOfficersLiability">Directors & Officers Liability – Separate Application Required:</label>
+        <input type="text" id="directorsOfficersLiability" name="directorsOfficersLiability">
+    </div>
+    <div class="form-group">
+        <label for="deductibleDirectorsOfficersLiability">Deductible:</label>
+        <input type="text" id="deductibleDirectorsOfficersLiability" name="deductibleDirectorsOfficersLiability">
+    </div>
+    <div class="form-group">
+        <label for="limitDirectorsOfficersLiability">Limit:</label>
+        <input type="text" id="limitDirectorsOfficersLiability" name="limitDirectorsOfficersLiability">
+    </div>
+    <div class="form-group">
+        <label for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateDirectorsOfficersLiability">If Insured has a current Claims Made policy in force, what is Retro Date?</label>
+        <input type="text" id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateDirectorsOfficersLiability" name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateDirectorsOfficersLiability">
+    </div>
+</div>
+
+<!-- Wrap-up Liability -->
+<div class="form-section">
+    <h2>Wrap-up Liability</h2>
+    <div class="form-group">
+        <label for="wrapUpLiability">Wrap-up Liability – Separate Application Required:</label>
+        <input type="text" id="wrapUpLiability" name="wrapUpLiability">
+    </div>
+    <div class="form-group">
+        <label for="deductibleWrapUpLiability">Deductible:</label>
+        <input type="text" id="deductibleWrapUpLiability" name="deductibleWrapUpLiability">
+    </div>
+    <div class="form-group">
+        <label for="limitWrapUpLiability">Limit:</label>
+        <input type="text" id="limitWrapUpLiability" name="limitWrapUpLiability">
+    </div>
+    <div class="form-group">
+        <label for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateWrapUpLiability">If Insured has a current Claims Made policy in force, what is Retro Date?</label>
+        <input type="text" id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateWrapUpLiability" name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateWrapUpLiability">
+    </div>
+</div>
+
+<!-- Pollution Liability -->
+<div class="form-section">
+    <h2>Pollution Liability</h2>
+    <div class="form-group">
+        <label for="pollutionLiability">Pollution Liability – Separate Applications Required:</label>
+        <input type="text" id="pollutionLiability" name="pollutionLiability">
+    </div>
+    <div class="form-group">
+        <label for="deductiblePollutionLiability">Deductible:</label>
+        <input type="text" id="deductiblePollutionLiability" name="deductiblePollutionLiability">
+    </div>
+    <div class="form-group">
+        <label for="limitPollutionLiability">Limit:</label>
+        <input type="text" id="limitPollutionLiability" name="limitPollutionLiability">
+    </div>
+    <div class="form-group">
+        <label for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDatePollutionLiability">If Insured has a current Claims Made policy in force, what is Retro Date?</label>
+        <input type="text" id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDatePollutionLiability" name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDatePollutionLiability">
+    </div>
+</div>
+
+<!-- Ship Repairer’s Legal Liability -->
+<div class="form-section">
+    <h2>Ship Repairer’s Legal Liability</h2>
+    <div class="form-group">
+        <label for="shipRepairersLegalLiability">Ship Repairer’s Legal Liability – Separate Application Required:</label>
+        <input type="text" id="shipRepairersLegalLiability" name="shipRepairersLegalLiability">
+    </div>
+    <div class="form-group">
+        <label for="deductibleShipRepairersLegalLiability">Deductible:</label>
+        <input type="text" id="deductibleShipRepairersLegalLiability" name="deductibleShipRepairersLegalLiability">
+    </div>
+    <div class="form-group">
+        <label for="limitShipRepairersLegalLiability">Limit:</label>
+        <input type="text" id="limitShipRepairersLegalLiability" name="limitShipRepairersLegalLiability">
+    </div>
+    <div class="form-group">
+        <label for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateShipRepairersLegalLiability">If Insured has a current Claims Made policy in force, what is Retro Date?</label>
+        <input type="text" id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateShipRepairersLegalLiability" name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateShipRepairersLegalLiability">
+    </div>
+</div>
+
+<!-- Marina Operator’s Legal Liability -->
+<div class="form-section">
+    <h2>Marina Operator’s Legal Liability</h2>
+    <div class="form-group">
+        <label for="marinaOperatorsLegalLiability">Marina Operator’s Legal Liability – Separate Application Required:</label>
+        <input type="text" id="marinaOperatorsLegalLiability" name="marinaOperatorsLegalLiability">
+    </div>
+    <div class="form-group">
+        <label for="deductibleMarinaOperatorsLegalLiability">Deductible:</label>
+        <input type="text" id="deductibleMarinaOperatorsLegalLiability" name="deductibleMarinaOperatorsLegalLiability">
+    </div>
+    <div class="form-group">
+        <label for="limitMarinaOperatorsLegalLiability">Limit:</label>
+        <input type="text" id="limitMarinaOperatorsLegalLiability" name="limitMarinaOperatorsLegalLiability">
+    </div>
+    <div class="form-group">
+        <label for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateMarinaOperatorsLegalLiability">If Insured has a current Claims Made policy in force, what is Retro Date?</label>
+        <input type="text" id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateMarinaOperatorsLegalLiability" name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateMarinaOperatorsLegalLiability">
+    </div>
+</div>
+
+<!-- Transportation Broker’s Legal Liability -->
+<div class="form-section">
+    <h2>Transportation Broker’s Legal Liability</h2>
+    <div class="form-group">
+        <label for="transportationBrokersLegalLiability">Transportation Broker’s Legal Liability – Separate Application Required:</label>
+        <input type="text" id="transportationBrokersLegalLiability" name="transportationBrokersLegalLiability">
+    </div>
+    <div class="form-group">
+        <label for="deductibleTransportationBrokersLegalLiability">Deductible:</label>
+        <input type="text" id="deductibleTransportationBrokersLegalLiability" name="deductibleTransportationBrokersLegalLiability">
+    </div>
+    <div class="form-group">
+        <label for="limitTransportationBrokersLegalLiability">Limit:</label>
+        <input type="text" id="limitTransportationBrokersLegalLiability" name="limitTransportationBrokersLegalLiability">
+    </div>
+    <div class="form-group">
+        <label for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateTransportationBrokersLegalLiability">If Insured has a current Claims Made policy in force, what is Retro Date?</label>
+        <input type="text" id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateTransportationBrokersLegalLiability" name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateTransportationBrokersLegalLiability">
+    </div>
+</div>
+
+<!-- Cargo Legal Liability -->
+<div class="form-section">
+    <h2>Cargo Legal Liability</h2>
+    <div class="form-group">
+        <label for="cargoLegalLiability">Cargo Legal Liability (Limit to reflect the maximum load the Insured arranges for shipment):</label>
+        <input type="text" id="cargoLegalLiability" name="cargoLegalLiability">
+    </div>
+    <div class="form-group">
+        <label for="deductibleCargoLegalLiability">Deductible:</label>
+        <input type="text" id="deductibleCargoLegalLiability" name="deductibleCargoLegalLiability">
+    </div>
+    <div class="form-group">
+        <label for="limitCargoLegalLiability">Limit:</label>
+        <input type="text" id="limitCargoLegalLiability" name="limitCargoLegalLiability">
+    </div>
+    <div class="form-group">
+        <label for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateCargoLegalLiability">If Insured has a current Claims Made policy in force, what is Retro Date?</label>
+        <input type="text" id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateCargoLegalLiability" name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateCargoLegalLiability">
+    </div>
+</div>
+
+<!-- Contingent Cargo -->
+<div class="form-section">
+    <h2>Contingent Cargo</h2>
+    <div class="form-group">
+        <label for="contingentCargo">Contingent Cargo (Limit same as Cargo Legal Liability limit. Responds if third party shipper’s primary policy fails):</label>
+        <input type="text" id="contingentCargo" name="contingentCargo">
+    </div>
+    <div class="form-group">
+        <label for="deductibleContingentCargo">Deductible:</label>
+        <input type="text" id="deductibleContingentCargo" name="deductibleContingentCargo">
+    </div>
+    <div class="form-group">
+        <label for="limitContingentCargo">Limit:</label>
+        <input type="text" id="limitContingentCargo" name="limitContingentCargo">
+    </div>
+    <div class="form-group">
+        <label for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateContingentCargo">If Insured has a current Claims Made policy in force, what is Retro Date?</label>
+        <input type="text" id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateContingentCargo" name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateContingentCargo">
+    </div>
+</div>
+
+<!-- E&O (Errors & Omissions) -->
+<div class="form-section">
+    <h2>E&O (Errors & Omissions)</h2>
+    <div class="form-group">
+        <label for="eoErrorsOmissions">E&O (Covers Insured’s mistakes resulting in financial loss to customer):</label>
+        <input type="text" id="eoErrorsOmissions" name="eoErrorsOmissions">
+    </div>
+    <div class="form-group">
+        <label for="deductibleEOErrorsOmissions">Deductible:</label>
+        <input type="text" id="deductibleEOErrorsOmissions" name="deductibleEOErrorsOmissions">
+    </div>
+    <div class="form-group">
+        <label for="limitEOErrorsOmissions">Limit:</label>
+        <input type="text" id="limitEOErrorsOmissions" name="limitEOErrorsOmissions">
+    </div>
+    <div class="form-group">
+        <label for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateEOErrorsOmissions">If Insured has a current Claims Made policy in force, what is Retro Date?</label>
+        <input type="text" id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateEOErrorsOmissions" name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateEOErrorsOmissions">
+    </div>
+</div>
+
+<!-- Warehouseman’s Legal Liability -->
+<div class="form-section">
+    <h2>Warehouseman’s Legal Liability</h2>
+    <div class="form-group">
+        <label for="warehousemansLegalLiability">Warehouseman’s Legal Liability – Separate Application Required:</label>
+        <input type="text" id="warehousemansLegalLiability" name="warehousemansLegalLiability">
+    </div>
+    <div class="form-group">
+        <label for="deductibleWarehousemansLegalLiability">Deductible:</label>
+        <input type="text" id="deductibleWarehousemansLegalLiability" name="deductibleWarehousemansLegalLiability">
+    </div>
+    <div class="form-group">
+        <label for="limitWarehousemansLegalLiability">Limit:</label>
+        <input type="text" id="limitWarehousemansLegalLiability" name="limitWarehousemansLegalLiability">
+    </div>
+    <div class="form-group">
+        <label for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateWarehousemansLegalLiability">If Insured has a current Claims Made policy in force, what is Retro Date?</label>
+        <input type="text" id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateWarehousemansLegalLiability" name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateWarehousemansLegalLiability">
+    </div>
+</div>
+
+<!-- Umbrella Liability -->
+<div class="form-section">
+    <h2>Umbrella Liability</h2>
+    <div class="form-group">
+        <label for="umbrellaLiability">Umbrella Liability – Separate Application Required:</label>
+        <input type="text" id="umbrellaLiability" name="umbrellaLiability">
+    </div>
+    <div class="form-group">
+        <label for="deductibleUmbrellaLiability">Deductible:</label>
+        <input type="text" id="deductibleUmbrellaLiability" name="deductibleUmbrellaLiability">
+    </div>
+    <div class="form-group">
+        <label for="limitUmbrellaLiability">Limit:</label>
+        <input type="text" id="limitUmbrellaLiability" name="limitUmbrellaLiability">
+    </div>
+    <div class="form-group">
+        <label for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateUmbrellaLiability">If Insured has a current Claims Made policy in force, what is Retro Date?</label>
+        <input type="text" id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateUmbrellaLiability" name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateUmbrellaLiability">
+    </div>
+</div>
+
+<!-- Excess Liability -->
+<div class="form-section">
+    <h2>Excess Liability</h2>
+    <div class="form-group">
+        <label for="excessLiability">Excess Liability:</label>
+        <input type="text" id="excessLiability" name="excessLiability">
+    </div>
+    <div class="form-group">
+        <label for="deductibleExcessLiability">Deductible:</label>
+        <input type="text" id="deductibleExcessLiability" name="deductibleExcessLiability">
+    </div>
+    <div class="form-group">
+        <label for="limitExcessLiability">Limit:</label>
+        <input type="text" id="limitExcessLiability" name="limitExcessLiability">
+    </div>
+    <div class="form-group">
+        <label for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateExcessLiability">If Insured has a current Claims Made policy in force, what is Retro Date?</label>
+        <input type="text" id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateExcessLiability" name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateExcessLiability">
+    </div>
+</div>
+
+<!-- Other -->
+<div class="form-section">
+    <h2>Other</h2>
+    <div class="form-group">
+        <label for="other8">Other:</label>
+        <input type="text" id="other8" name="other8">
+    </div>
+    <div class="form-group">
+        <label for="other9">Other:</label>
+        <input type="text" id="other9" name="other9">
+    </div>
+</div>
+
+<!-- Signatures -->
+<div class="form-section">
+    <h2>Signatures</h2>
+    <div class="form-group">
+        <label for="signatureOfInsuredOrAuthorizedRepresentative">Signature of Insured or Authorized Representative:</label>
+        <input type="text" id="signatureOfInsuredOrAuthorizedRepresentative" name="signatureOfInsuredOrAuthorizedRepresentative">
+    </div>
+    <div class="form-group">
+        <label for="printNameAndTitle">Print Name and Title:</label>
+        <input type="text" id="printNameAndTitle" name="printNameAndTitle">
+    </div>
+    <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+    </div>
+    <div class="form-group">
+        <label for="signatureOfBroker">Signature of Broker:</label>
+        <input type="text" id="signatureOfBroker" name="signatureOfBroker">
+    </div>
+    <div class="form-group">
+        <label for="printNameBroker">Print Name:</label>
+        <input type="text" id="printNameBroker" name="printNameBroker">
+    </div>
+    <div class="form-group">
+        <label for="doYouRecommendThisRiskInEveryRespect">Do you recommend this risk in every respect?</label>
+        <select id="doYouRecommendThisRiskInEveryRespect" name="doYouRecommendThisRiskInEveryRespect">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+    </div>
+</div>
+
+<!-- Submit Button -->
+<div class="form-section">
+    <button type="submit">Submit</button>
+</div>
+
+</form>
+
+</body>
+</html>

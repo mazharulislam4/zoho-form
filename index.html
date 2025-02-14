@@ -1,0 +1,3767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commercial Insurance Application Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- Location and Building Information -->
+    <h1 style="text-align: center">Commercial Insurance Application Form</h1>
+
+    <form>
+      <div class="form-section">
+        <div class="form-group flex align-center gap-1">
+          <label for="locationNumber" class="heading">Location Number:</label>
+          <input
+            type="number"
+            class="small-box"
+            id="locationNumber"
+            name="locationNumber"
+            min="0"
+          />
+        </div>
+        <div class="form-group flex align-center" style="gap: 22px">
+          <label for="buildingNumber">Building Number:</label>
+          <input
+            type="text"
+            class="small-box"
+            min="0"
+            id="buildingNumber"
+            name="buildingNumber"
+          />
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" />
+        </div>
+        <div class="flex gap-1">
+          <div class="flex-1">
+            <div class="form-group">
+              <label for="city">City:</label>
+              <input type="text" id="city" name="city" />
+            </div>
+            <div class="form-group">
+              <label for="province">Province:</label>
+              <input type="text" id="province" name="province" />
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="form-group">
+              <label for="postalCode">Postal Code:</label>
+              <input type="text" id="postalCode" name="postalCode" />
+            </div>
+            <div class="form-group">
+              <label for="country">Country:</label>
+              <input type="text" id="country" name="country" />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="operations"
+            >Operations of Insured at this Location:</label
+          >
+          <textarea rows="8" type="text" id="operations" name="operations">
+          </textarea>
+        </div>
+      </div>
+
+      <!-- Mortgagees -->
+      <div class="form-section">
+        <h2>Mortgagees</h2>
+        <div class="flex gap-1 align-center w-full">
+          <div class="sm-w-6">
+            <div class="form-group">
+              <label for="mortgageeName1">Name & Mailing Address:</label>
+              <input type="text" id="mortgageeName1" name="mortgageeName1" />
+            </div>
+            <div class="form-group">
+              <label for="interest1">Specify Interest in This Policy:</label>
+              <input type="text" id="interest1" name="interest1" />
+            </div>
+          </div>
+          <div class="sm-w-4">
+            <div class="form-group">
+              <label for="mortgageeName2">Name & Mailing Address:</label>
+              <input type="text" id="mortgageeName2" name="mortgageeName2" />
+            </div>
+            <div class="form-group">
+              <label for="interest2">Specify Interest in This Policy:</label>
+              <input type="text" id="interest2" name="interest2" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loss Payees Section -->
+      <div style="margin-bottom: 30px">
+        <h2
+          style="
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+          "
+        >
+          LOSS PAYEES
+        </h2>
+        <table
+          style="width: 100%; border-collapse: collapse; margin-bottom: 20px"
+        >
+          <tr>
+            <th
+              style="
+                border: 1px solid #000;
+                padding: 8px;
+                text-align: left;
+                background-color: #f5f5f5;
+              "
+            >
+              Name & Mailing Address
+            </th>
+            <th
+              style="
+                border: 1px solid #000;
+                padding: 8px;
+                text-align: left;
+                background-color: #f5f5f5;
+              "
+            >
+              Specify Interest in This Policy
+            </th>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #000; padding: 8px">
+              <input type="text" />
+            </td>
+            <td style="border: 1px solid #000; padding: 8px">
+              <input type="text" />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #000; padding: 8px">
+              <input type="text" />
+            </td>
+            <td style="border: 1px solid #000; padding: 8px">
+              <input type="text" />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #000; padding: 8px">
+              <input type="text" />
+            </td>
+            <td style="border: 1px solid #000; padding: 8px">
+              <input type="text" />
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Additional Insureds Section -->
+      <div style="margin-bottom: 30px">
+        <h2
+          style="
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+          "
+        >
+          ADDITIONAL INSUREDS (LIABILITY)
+        </h2>
+        <table
+          style="width: 100%; border-collapse: collapse; margin-bottom: 20px"
+        >
+          <tr>
+            <th
+              style="
+                border: 1px solid #000;
+                padding: 8px;
+                text-align: left;
+                background-color: #f5f5f5;
+              "
+            >
+              Additional Insured (Including Address):
+            </th>
+            <th
+              style="
+                border: 1px solid #000;
+                padding: 8px;
+                text-align: left;
+                background-color: #f5f5f5;
+              "
+            >
+              With Respect to:
+            </th>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #000; padding: 8px">
+              <input type="text" />
+            </td>
+            <td style="border: 1px solid #000; padding: 8px">
+              <input type="text" />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #000; padding: 8px">
+              <input type="text" />
+            </td>
+            <td style="border: 1px solid #000; padding: 8px">
+              <input type="text" />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #000; padding: 8px">
+              <input type="text" />
+            </td>
+            <td style="border: 1px solid #000; padding: 8px">
+              <input type="text" />
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Broker's Assessment -->
+      <div class="section box">
+        <h2 class="heading">Broker's Assessment</h2>
+        <div class="input-section">
+          <h2>Has the Broker Visited This Building?</h2>
+          <div class="flex gap-1 align-center">
+            <div class="radio-group">
+              <label
+                ><input type="radio" name="broker-visited" value="yes" />
+                <span>Yes</span>
+              </label>
+            </div>
+            <div class="radio-group">
+              <label
+                ><input type="radio" name="broker-visited" value="no" />
+                <span> No </span></label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="input-section">
+          <h2>Broker's Assessment of Risk:</h2>
+          <div class="flex gap-2 align-center">
+            <div class="radio-group">
+              <label
+                ><input type="radio" name="risk-assessment" value="excellent" />
+                <span>Excellent</span></label
+              >
+            </div>
+            <div class="radio-group">
+              <label
+                ><input type="radio" name="risk-assessment" value="very-good" />
+                <span> Very Good</span></label
+              >
+            </div>
+            <div class="radio-group">
+              <label
+                ><input type="radio" name="risk-assessment" value="good" />
+                <span>Good</span></label
+              >
+            </div>
+            <div class="radio-group">
+              <label
+                ><input type="radio" name="risk-assessment" value="average" />
+                <span>Average</span></label
+              >
+            </div>
+            <div class="radio-group">
+              <label
+                ><input type="radio" name="risk-assessment" value="fair" />
+                <span>Fair</span></label
+              >
+            </div>
+            <div class="radio-group">
+              <label
+                ><input type="radio" name="risk-assessment" value="poor" />
+                <span> Poor </span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Operational Status -->
+      <div style="margin-bottom: 30px; border: 1px solid #ccc; padding: 20px">
+        <h2 class="heading">Operational Status</h2>
+        <div style="margin-bottom: 15px">
+          <h3>
+            Will the Insured be Operational in This Building on the Effective
+            Date?
+          </h3>
+          <div>
+            <div class="radio-group">
+              <label
+                ><input type="radio" name="operational-status" value="yes" />
+                <span>Yes</span></label
+              >
+            </div>
+            <div class="radio-group" style="margin-block: 10px">
+              <label
+                ><input type="radio" name="operational-status" value="no" />
+                <span>No</span></label
+              >
+            </div>
+            <div class="radio-group">
+              <label
+                ><input
+                  type="radio"
+                  name="operational-status"
+                  value="na"
+                /><span> N/A (Insured is Landlord Only)</span></label
+              >
+            </div>
+          </div>
+        </div>
+        <div style="margin-bottom: 15px">
+          <label for="status-explain">If no, explain:</label>
+          <textarea
+            id="status-explain"
+            style="
+              width: 100%;
+              padding: 8px;
+              border: 1px solid #666;
+              min-height: 60px;
+            "
+          ></textarea>
+        </div>
+      </div>
+
+      <!-- Construction Details -->
+      <div class="form-section box">
+        <h2>Construction Details</h2>
+        <div class="grid">
+          <div class="form-group">
+            <label for="stories">Stories:</label>
+            <input type="text" id="stories" name="stories" />
+          </div>
+          <div class="form-group">
+            <label for="yearBuilt">Year Built:</label>
+            <input type="text" id="yearBuilt" name="yearBuilt" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="sqFt"
+            >Sq Ft of Entire Bldg (not just Insured’s portion):</label
+          >
+          <input type="text" id="sqFt" name="sqFt" />
+        </div>
+        <div class="grid">
+          <div class="form-group">
+            <label for="exteriorWalls">Exterior Walls:</label>
+            <select id="exteriorWalls" name="exteriorWalls">
+              <option value="masonryVeneer">Masonry Veneer</option>
+              <option value="pouredConcrete">Poured Concrete</option>
+              <option value="frameAndAllOther">Frame and all other</option>
+              <option value="frameMetalClad">Frame metal clad</option>
+              <option value="concretePanelsOnSteelStructure">
+                Concrete panels on steel structure
+              </option>
+              <option value="metallicPanelsOnSteelStructure">
+                Metallic panels on steel structure
+              </option>
+              <option value="fireResistive">Fire resistive</option>
+              <option value="nonCombustibleWithNonMasonryWalls">
+                Non-combustible with non-masonry walls
+              </option>
+              <option value="hollowConcreteBlock">
+                HCB – Hollow Concrete Block
+              </option>
+              <option value="frameWithBrickVeneer">
+                Frame w/ brick veneer
+              </option>
+              <option value="solidBrick">Solid Brick</option>
+              <option value="steelOnSteel">Steel on steel</option>
+              <option value="wood">Wood</option>
+              <option value="nonCombustibleWithMasonryWalls">
+                Non-combustible with masonry walls
+              </option>
+              <option value="masonry">Masonry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="floors">Floors:</label>
+            <select id="floors" name="floors">
+              <option value="wood">Wood</option>
+              <option value="pouredConcreteOrFireResistiveMaterial">
+                Poured concrete or fire resistive material
+              </option>
+              <option value="masonry">Masonry</option>
+              <option value="masonryOnWoodStructureOrOtherCombustibleMaterial">
+                Masonry on wood structure or other combustible material
+              </option>
+              <option value="nonCombustibleWithMasonry">
+                Non-combustible with masonry
+              </option>
+              <option value="brickOrStone">Brick or stone</option>
+              <option value="frameAndAllOther">Frame and all other</option>
+              <option value="concretePanelsOnSteelStructure">
+                Concrete panels on steel structure
+              </option>
+              <option value="heavyBeamOrMill">Heavy Beam or “Mill”</option>
+              <option value="nonCombustibleWithoutMasonry">
+                Non-combustible without masonry
+              </option>
+              <option value="steel">Steel</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="basement">Basement:</label>
+            <select id="basement" name="basement">
+              <option value="pouredConcrete">Poured concrete</option>
+              <option value="noBasement">No basement</option>
+              <option value="nonCombustibleWithMasonry">
+                Non-combustible with masonry
+              </option>
+              <option value="masonryWithCombustibleCeiling">
+                Masonry with combustible ceiling
+              </option>
+              <option value="frameAndAllOther">Frame and all other</option>
+              <option value="hollowConcreteBlock">
+                HCB – Hollow concrete block
+              </option>
+              <option value="fireResistive">Fire resistive</option>
+              <option value="nonCombustibleWithoutMasonry">
+                Non-combustible without masonry
+              </option>
+              <option value="masonryVeneer">Masonry veneer</option>
+              <option value="unfinishedCrawlSpace">
+                Unfinished (crawl space)
+              </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="roofConstruction">Roof Construction:</label>
+            <select id="roofConstruction" name="roofConstruction">
+              <option value="frameOnSteelJoints">Frame on steel Joints</option>
+              <option value="pouredConcrete">Poured Concrete</option>
+              <option value="frameOnWoodJoints">Frame on wood joints</option>
+              <option value="steelBeam">Steel Beam</option>
+              <option value="heavyBeamOrMill">Heavy beam or “mill”</option>
+              <option value="steelDeck">Steel Deck</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="roofCovering">Roof Covering:</label>
+            <select id="roofCovering" name="roofCovering">
+              <option value="asphaltShingles">Asphalt Shingles</option>
+              <option value="concreteOnSteelStructure">
+                Concrete on steel structure
+              </option>
+              <option value="woodShakes">Wood shakes</option>
+              <option value="rubberPolymer">Rubber/Polymer</option>
+              <option value="glassDomeSkylight">Glass dome/skylight</option>
+              <option value="steelDeck">Steel Deck</option>
+              <option value="concreteTiles">Concrete Tiles</option>
+              <option value="tile">Tile</option>
+              <option value="tarPaper">Tar Paper</option>
+              <option value="woodShingles">Wood Shingles</option>
+              <option value="tarAndGravel">Tar and gravel</option>
+              <option value="metal">Metal</option>
+              <option value="state">State</option>
+              <option value="plastic">Plastic</option>
+              <option value="glassPolyOnMetal">Glass/poly on metal</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="electrical">Electrical:</label>
+            <select id="electrical" name="electrical">
+              <option value="breakers">Breakers</option>
+              <option value="fuses">Fuses</option>
+              <option value="breakersAndFuses">Breakers & Fuses</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="plumbing">Plumbing:</label>
+            <select id="plumbing" name="plumbing">
+              <option value="copperPlasticPVCMix">
+                Copper/Plastic PVC mix
+              </option>
+              <option value="copper">Copper</option>
+              <option value="galvanized">Galvanized</option>
+              <option value="lead">Lead</option>
+              <option value="stainlessSteel">Stainless Steel</option>
+              <option value="plasticPVSOrCVS">Plastic (PVS or CVS)</option>
+              <option value="steel">Steel</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="heating">Heating:</label>
+            <select id="heating" name="heating">
+              <option value="furnaceCentral">Furnace central</option>
+              <option value="none">None</option>
+              <option value="radiant">Radiant</option>
+              <option value="heatPump">Heat pump</option>
+              <option value="woodBurningKitchenStove">
+                Wood burning kitchen stove
+              </option>
+              <option value="slowWoodBurningDirTightStove">
+                Slow wood burning/dir tight stove
+              </option>
+              <option value="acornStoveFranklinOrPotbellyStove">
+                ACORN stove, Franklin or Potbelly Stove (loose fitting or no
+                doors)
+              </option>
+              <option value="furnaceCentralWithAddOnWoodBurningUnit">
+                Furnace (central) with add-on wood burning unit
+              </option>
+              <option value="woodFurnaceAddOn">Wood furnace add on</option>
+              <option value="masonryFireplace">Masonry fireplace</option>
+              <option value="biEnergyCombination">Bi-energy/combination</option>
+              <option value="store">Store</option>
+              <option value="solidFuelHeatingUnitIndoor">
+                Solid fuel heating unit-indoor
+              </option>
+              <option value="220WattElectricFurnace">
+                220 Watt electric furnace (ie: Kalor)
+              </option>
+              <option value="woodBurningUnitIndoor">
+                Wood burning unit-indoor
+              </option>
+              <option value="spaceHeater">Space heater</option>
+              <option value="recessedHeater">Recessed heater</option>
+              <option value="pipelessWarmAirFurnace">
+                Pipeless warm air furnace
+              </option>
+              <option value="roofMountedHVAC">Roof mounted HVAC</option>
+              <option value="boiler">Boiler</option>
+              <option value="electric">Electric</option>
+              <option value="combinedPrimaryOutsideRiskUnitAndInsideAuxiliary">
+                Combined primary outside risk unit & inside auxiliary
+              </option>
+              <option value="woodstoveNotAirtight">
+                Woodstove, not airtight
+              </option>
+              <option value="pelletStove">Pellet stove</option>
+              <option value="woodFurnace">Wood furnace</option>
+              <option value="fireplaceInsert">Fireplace insert</option>
+              <option value="furnaceCentral">Furnace (central)</option>
+              <option value="woodOilCombination">Wood/oil combination</option>
+              <option value="cookstore">Cookstore</option>
+              <option value="solidFuelHeatingUnitOutdoor">
+                Solid fuel heating unit-outdoor
+              </option>
+              <option value="floorFurnace">Floor furnace</option>
+              <option value="wallFurnace">Wall furnace</option>
+              <option value="magazineTypeCoalBurningStove">
+                Magazine type coal burning stove
+              </option>
+              <option value="waterHeaters">Water heaters</option>
+              <option value="suspendedHeaters">Suspended heaters</option>
+              <option value="geothermal">Geothermal</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fuelForHeating">Fuel for Heating:</label>
+            <select id="fuelForHeating" name="fuelForHeating">
+              <option value="naturalGas">Natural Gas</option>
+              <option value="butane">Butane</option>
+              <option value="electricOil">Electric/Oil</option>
+              <option value="liquefiedPetroleumGas">
+                Liquefied Petroleum Gas
+              </option>
+              <option value="oil">Oil</option>
+              <option value="pellet">Pellet</option>
+              <option value="steam">Steam</option>
+              <option value="coal">Coal</option>
+              <option value="electricWood">Electric/Wood</option>
+              <option value="napthaGas">Naptha Gas</option>
+              <option value="oilWood">Oil/Wood</option>
+              <option value="propane">Propane</option>
+              <option value="wood">Wood</option>
+              <option value="electric">Electric</option>
+              <option value="kerosene">Kerosene</option>
+              <option value="naturalGas">Natural Gas</option>
+              <option value="otherSolidFuel">Other Solid Fuel</option>
+              <option value="solar">Solar</option>
+              <option value="combination">Combination</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- Renovations -->
+      <div class="form-section box">
+        <h2>Renovations</h2>
+        <div class="flex sm-flex-row w-full gap-1">
+          <div class="form-group flex-1">
+            <label for="renovations">Will Any Renovations Be Undertaken?</label>
+            <select id="renovations" name="renovations">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="renovationStartDate">Start Date:</label>
+            <input
+              type="date"
+              id="renovationStartDate"
+              name="renovationStartDate"
+            />
+          </div>
+          <div class="form-group">
+            <label for="renovationCompletionDate">Completion Date:</label>
+            <input
+              type="date"
+              id="renovationCompletionDate"
+              name="renovationCompletionDate"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="specificRenovations"
+            >What specific renovations will be undertaken?</label
+          >
+          <textarea
+            id="specificRenovations"
+            name="specificRenovations"
+            rows="8"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="structuralWork">Will there be any structural work?</label>
+          <select id="structuralWork" name="structuralWork">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="structuralWorkDetails">If yes, details:</label>
+          <textarea
+            id="structuralWorkDetails"
+            name="structuralWorkDetails"
+            rows="8"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="renovationValue">Value of the renovation:</label>
+          <input type="text" id="renovationValue" name="renovationValue" />
+        </div>
+        <div class="form-group">
+          <label for="occupiedDuringRenovation"
+            >Will the premises be occupied during the renovation period?</label
+          >
+          <select id="occupiedDuringRenovation" name="occupiedDuringRenovation">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="occupiedDuringRenovationExplanation"
+            >If yes, explain:</label
+          >
+          <textarea
+            rows="8"
+            id="occupiedDuringRenovationExplanation"
+            name="occupiedDuringRenovationExplanation"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="renovationPerformedBy"
+            >Who is performing the renovations?</label
+          >
+          <select id="renovationPerformedBy" name="renovationPerformedBy">
+            <option value="insured">Insured</option>
+            <option value="contractors">Contractors</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="insuredRenovationExperience"
+            >If Insured is performing the renovations, advise experience:</label
+          >
+          <textarea
+            rows="8"
+            id="insuredRenovationExperience"
+            name="insuredRenovationExperience"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="contractorsCGL"
+            >If contractors are performing the renovations, do the contractors
+            have CGL in force?</label
+          >
+          <select id="contractorsCGL" name="contractorsCGL">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Updates -->
+      <div class="form-section box">
+        <h2>Updates</h2>
+        <div class="grid">
+          <div class="form-group">
+            <label for="updates">None Known or:</label>
+            <input type="text" id="updates" name="updates" />
+          </div>
+          <div class="form-group">
+            <label for="electricalUpdateYear">Electrical Update Year:</label>
+            <input
+              type="text"
+              id="electricalUpdateYear"
+              name="electricalUpdateYear"
+            />
+          </div>
+          <div class="form-group">
+            <label for="plumbingUpdateYear">Plumbing Update Year:</label>
+            <input
+              type="text"
+              id="plumbingUpdateYear"
+              name="plumbingUpdateYear"
+            />
+          </div>
+          <div class="form-group">
+            <label for="heatingUpdateYear">Heating Update Year:</label>
+            <input
+              type="text"
+              id="heatingUpdateYear"
+              name="heatingUpdateYear"
+            />
+          </div>
+          <div class="form-group">
+            <label for="roofUpdateYear">Roof Update Year:</label>
+            <input type="text" id="roofUpdateYear" name="roofUpdateYear" />
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <div class="input-section">
+            <label>Electrical Update Complete/Partial:</label>
+            <div class="flex gap-2 align-center">
+              <div class="radio-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="electricalUpdateCompletePartial"
+                    value="complete"
+                  />
+                  <span>Complete</span>
+                </label>
+              </div>
+              <div class="radio-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="electricalUpdateCompletePartial"
+                    value="partial"
+                  />
+                  <span>Partial</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-section">
+            <label>Plumbing Update Complete/Partial:</label>
+            <div class="flex gap-2 align-center">
+              <div class="radio-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="plumbingUpdateCompletePartial"
+                    value="complete"
+                  />
+                  <span>Complete</span>
+                </label>
+              </div>
+              <div class="radio-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="plumbingUpdateCompletePartial"
+                    value="partial"
+                  />
+                  <span>Partial</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <div class="input-section">
+            <label>Heating Update Complete/Partial:</label>
+            <div class="flex gap-2 align-center">
+              <div class="radio-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="heatingUpdateCompletePartial"
+                    value="complete"
+                  />
+                  <span>Complete</span>
+                </label>
+              </div>
+              <div class="radio-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="heatingUpdateCompletePartial"
+                    value="partial"
+                  />
+                  <span>Partial</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-section">
+            <label>Roof Update Complete/Partial:</label>
+            <div class="flex gap-2 align-center">
+              <div class="radio-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="roofUpdateCompletePartial"
+                    value="complete"
+                  />
+                  <span>Complete</span>
+                </label>
+              </div>
+              <div class="radio-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="roofUpdateCompletePartial"
+                    value="partial"
+                  />
+                  <span>Partial</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fire Protection -->
+      <div class="form-section box">
+        <h2>Fire Protection</h2>
+        <div class="grid">
+          <div class="form-group">
+            <label for="hydrants">Hydrants:</label>
+            <select id="hydrants" name="hydrants">
+              <option value="unprotected">Unprotected</option>
+              <option value="within150m">Within 150m</option>
+              <option value="within300m">Within 300m</option>
+              <option value="over300m">Over 300m</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fireDepartment">Fire Department:</label>
+            <select id="fireDepartment" name="fireDepartment">
+              <option value="within5k">Within 5k</option>
+              <option value="within8k">Within 8k</option>
+              <option value="within13k">Within 13k</option>
+              <option value="over13k">Over 13k</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="portableExtinguishers">Portable Extinguishers:</label>
+            <select id="portableExtinguishers" name="portableExtinguishers">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="extinguishingAgentType"
+              >Extinguishing Agent Type:</label
+            >
+            <select id="extinguishingAgentType" name="extinguishingAgentType">
+              <option value="carbonDioxide">Carbon Dioxide</option>
+              <option value="wetChemical">Wet Chemical</option>
+              <option value="foam">Foam</option>
+              <option value="halon">Halon</option>
+              <option value="dryChemical">Dry Chemical</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="sprinklerSystem">Sprinkler System:</label>
+            <select id="sprinklerSystem" name="sprinklerSystem">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="sprinklerSystemCoverage">Coverage %:</label>
+            <input
+              type="text"
+              id="sprinklerSystemCoverage"
+              name="sprinklerSystemCoverage"
+            />
+          </div>
+          <div class="form-group">
+            <label for="sprinklerSystemDesignedFor"
+              >If sprinklered, was the sprinkler system designed for this
+              current occupancy, or was it designed for a previous
+              occupancy?</label
+            >
+            <select
+              id="sprinklerSystemDesignedFor"
+              name="sprinklerSystemDesignedFor"
+            >
+              <option value="currentOccupancy">Current Occupancy</option>
+              <option value="previousOccupancy">Previous Occupancy</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fireAlarm">Fire Alarm:</label>
+            <select id="fireAlarm" name="fireAlarm">
+              <option value="localAlarm">Local Alarm</option>
+              <option value="centralStation">Central Station</option>
+              <option value="monitoringStationFullService">
+                Monitoring station (full service)
+              </option>
+              <option value="location">Location</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="standpipeAndHose">Standpipe & Hose:</label>
+            <select id="standpipeAndHose" name="standpipeAndHose">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Crime Protection -->
+      <div class="form-section box">
+        <h2>Crime Protection</h2>
+        <div class="grid">
+          <div class="form-group">
+            <label for="burglarAlarm">Burglar Alarm:</label>
+            <select id="burglarAlarm" name="burglarAlarm">
+              <option value="none">None</option>
+              <option value="local">Local</option>
+              <option value="centralStation">Central Station</option>
+              <option value="other">Other (Describe)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="safeType">Safe Type:</label>
+            <select id="safeType" name="safeType">
+              <option value="none">None</option>
+              <option value="fire">Fire</option>
+              <option value="burglary">Burglary</option>
+              <option value="vault">Vault</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="safeClass">Safe Class:</label>
+            <select id="safeClass" name="safeClass">
+              <option value="none">None</option>
+              <option value="1">Class 1</option>
+              <option value="2">Class 2</option>
+              <option value="3">Class 3</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="otherProtection">Other Protection:</label>
+            <select id="otherProtection" name="otherProtection">
+              <option value="fence">Fence</option>
+              <option value="doorsDeadbolt">Doors – deadbolt</option>
+              <option value="windowsBarred">Windows – barred</option>
+              <option value="steelBarsOnOpenings">
+                Steel bars on openings
+              </option>
+              <option value="watchmenSecurityGuards">
+                Watchmen/security guards
+              </option>
+              <option value="guardDog">Guard Dog</option>
+              <option value="additionalCombinationLock">
+                Additional combination lock
+              </option>
+              <option value="alarmFineWireProtectingOpenings">
+                Alarm ‘fine wire’ protecting openings
+              </option>
+              <option value="commonTenantWallsReinforcedWithSteelMesh">
+                Common tenant walls reinforced with steel mesh
+              </option>
+              <option value="entranceVisibleFromStreet">
+                Entrance visible from street
+              </option>
+              <option value="exteriorLighting">Exterior lighting</option>
+              <option value="metalLoadingDoorsSecuredInternally">
+                Metal loading doors, secured internally
+              </option>
+              <option value="multipleLockStyles">Multiple lock styles</option>
+              <option value="propertyLotIlluminatedAtNight">
+                Property/lot illuminated at night
+              </option>
+              <option value="steelPostFrontRearToPreventVehicleEntry">
+                Steel post (front & rear) to prevent vehicle entry
+              </option>
+              <option value="stockroomCeilingEntirelyCoveredByMotionSensor">
+                Stockroom ceiling entirely covered by motion sensor
+              </option>
+              <option value="warningSigns">Warning signs</option>
+              <option value="exteriorOpeningsDoorsDeadbolt">
+                Exterior Openings/Doors – Deadbolt
+              </option>
+              <option value="breakageResistantGlass">
+                Breakage resistant glass
+              </option>
+              <option value="windowsWireMesh">Windows – wire mesh</option>
+              <option value="surveillanceCameras">Surveillance cameras</option>
+              <option value="windowsULCSecurityFilm">
+                Windows – ULC security film
+              </option>
+              <option value="additionalKey">Additional key</option>
+              <option value="cameraWithConcealedVCRRecordingOnFilm">
+                Camera with concealed VCR recording on film
+              </option>
+              <option value="electronicLock">Electronic lock</option>
+              <option value="exteriorDoorsOfSturdyConstructionInsideHinges">
+                Exterior doors of sturdy construction, inside hinges
+              </option>
+              <option value="holdUpButtons">Hold-up buttons</option>
+              <option value="motionSensitiveLighting">
+                Motion sensitive lighting
+              </option>
+              <option value="perimeterFenceAndLockableGate">
+                Perimeter fence and lockable gate
+              </option>
+              <option value="skylightRoofACOpeningsBlockedOff">
+                Skylight/Roof AC openings blocked off
+              </option>
+              <option value="stockSecuredSeparateEnclosure">
+                Stock secured – separate enclosure
+              </option>
+              <option value="warehouseAreaAlarmedSeparatelyFromOffice">
+                Warehouse area alarmed separately from office
+              </option>
+              <option value="windowsGlassBreakageDetectors">
+                Windows – Glass breakage detectors
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Occupancy of Building -->
+      <div class="form-section box">
+        <h2>Occupancy of Building</h2>
+        <div class="form-group">
+          <label for="squareFootageOccupiedByInsured"
+            >Square Footage Occupied by the Insured:</label
+          >
+          <input
+            type="text"
+            id="squareFootageOccupiedByInsured"
+            name="squareFootageOccupiedByInsured"
+          />
+        </div>
+        <div class="form-group">
+          <label for="occupiedByInsuredAs">Occupied by the Insured as:</label>
+          <select id="occupiedByInsuredAs" name="occupiedByInsuredAs">
+            <option value="tenant">Tenant</option>
+            <option value="owner">Owner</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="squareFootageOccupiedByOtherOccupants"
+            >Square Footage Occupied by Other Occupants:</label
+          >
+          <input
+            type="text"
+            id="squareFootageOccupiedByOtherOccupants"
+            name="squareFootageOccupiedByOtherOccupants"
+          />
+        </div>
+        <div class="form-group">
+          <label for="otherOccupants"
+            >List all other occupants in the building:</label
+          >
+          <textarea id="otherOccupants" name="otherOccupants"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="portionVacantUnoccupied"
+            >Is any portion of this building currently vacant/unoccupied?</label
+          >
+          <select id="portionVacantUnoccupied" name="portionVacantUnoccupied">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="squareFootageVacantUnoccupied"
+            >If yes, what square footage is vacant/unoccupied?</label
+          >
+          <input
+            type="text"
+            id="squareFootageVacantUnoccupied"
+            name="squareFootageVacantUnoccupied"
+          />
+        </div>
+        <div class="form-group">
+          <label for="reasonForVacancyUnoccupancy"
+            >If yes, what is the reason for the vacancy/unoccupancy?</label
+          >
+          <textarea
+            id="reasonForVacancyUnoccupancy"
+            name="reasonForVacancyUnoccupancy"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="expectedDurationOfVacancyUnoccupancy"
+            >If yes, what is the expected duration of the
+            vacancy/unoccupancy?</label
+          >
+          <input
+            type="text"
+            id="expectedDurationOfVacancyUnoccupancy"
+            name="expectedDurationOfVacancyUnoccupancy"
+          />
+        </div>
+      </div>
+
+      <!-- Exposures -->
+      <div class="form-section box">
+        <h2>Exposures</h2>
+        <label>
+          EXPOSURES (NOT IN SAME BUILDING, BUT RATHER IN SURROUNDING
+          BUILDINGS)</label
+        >
+        <table class="w-full">
+          <thead>
+            <tr>
+              <th>Direction</th>
+              <th>Distance in Meters</th>
+              <th>Occupancy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Left of Insured:</td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td>Right of Insured:</td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td>Behind Insured:</td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td>Front of Insured:</td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="flex gap-2 mt-1">
+          <div class="checkbox-group">
+            <input type="checkbox" />
+            <label>Clear all directions:</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" />
+            <label>Exposures unknown:</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Schedule of Coverage -->
+      <div class="wrapper box">
+        <h2>SCHEDULE OF COVERAGE</h2>
+        <table class="w-full">
+          <thead>
+            <tr>
+              <th c>PROPERTY</th>
+              <th>Deductible</th>
+              <th>Co-Ins</th>
+              <th>Limit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <label class="flex gap-1 align-center">
+                  <input type="checkbox" style="width: 20px; height: 20px" />
+                  <span style="font-size: 1rem"
+                    >Building, Equipment and Stock - Broad Form/All Risk
+                  </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="flex gap-1 align-center">
+                  <input type="checkbox" style="width: 20px; height: 20px" />
+                  <span style="font-size: 1rem"
+                    >Building, Equipment and Stock - Named Perils/Fire & EC
+                  </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+
+            <!-- basic loss  -->
+            <tr>
+              <td><h3 style="margin: 0">Basis of Loss Settlement:</h3></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <label class="flex gap-1 align-center">
+                  <input type="checkbox" style="width: 20px; height: 20px" />
+                  <span style="font-size: 1rem"
+                    >Actual Cash Value (Replacement Cost Less Depreciation)
+                  </span>
+                </label>
+                <label class="flex gap-1 align-center">
+                  <input type="checkbox" style="width: 20px; height: 20px" />
+                  <span style="font-size: 1rem"
+                    >Replacement Cost (Excluding Stock)
+                  </span>
+                </label>
+                <label class="flex gap-1 align-center">
+                  <input type="checkbox" style="width: 20px; height: 20px" />
+                  <span style="font-size: 1rem"
+                    >Delete Same Site/Adjacent Site Clause (Building)
+                  </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">Sewer Back-Up</span>
+                  <input type="text" class="dashed w-full" />
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">Flood</span>
+                  <input type="text" class="dashed w-full" />
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">Earthquake</span>
+                  <input type="text" class="dashed w-full" />
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">Blanket Coverage Required</span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption"
+                    >Stated Amount/Waiver of Co-Insurance</span
+                  >
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">By-Laws (Building) </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption"
+                    >Extension Endorsement – Include Broadest Extensions
+                  </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption"
+                    >Extension Endorsement – Include Broadest Extensions
+                  </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">Building </span>
+                  <input type="text" class="dashed w-full" />
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <!-- Contents  -->
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">Contents </span>
+                  <input type="text" class="dashed w-full" />
+                </label>
+                <dl>
+                  <dt>Split of Contents limit:</dt>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption">Equipment -</span>
+                      <input type="text" class="w-full" />
+                    </label>
+                  </dd>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption">Tenant’s Improvements -</span>
+                      <input type="text" class="w-full" />
+                    </label>
+                  </dd>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption">Stock (ACV) -</span>
+                      <input type="text" class="w-full" />
+                    </label>
+                  </dd>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption"
+                        >Consequential Loss (Spoilage) <br />
+                        Extension, Including Off Premises Service
+                        <br />Interruption – Applicable to Perishable Stock
+                        Required Sub-Limit-</span
+                      >
+                      <input type="text" class="w-full" />
+                    </label>
+                  </dd>
+                </dl>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+
+            <!-- office content  -->
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">Office Contents </span>
+                  <input type="text" class="dashed w-full" />
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">Customers’ Goods (ACV) </span>
+                  <input type="text" class="dashed w-full" />
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">Moulds, Dies, Patterns </span>
+                  <input type="text" class="dashed w-full" />
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption"
+                    >Jewels, Jewellery, Furs, <br />
+                    Fur Garments (Named Perils coverage only)- <br />
+                    If Broad Form coverage is required, <br />
+                    apply for Block policy below
+                  </span>
+                  <input
+                    type="text"
+                    class="dashed w-full"
+                    style="align-self: flex-end"
+                  />
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">Other </span>
+                  <input type="text" class="dashed w-full" />
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">Other </span>
+                  <input type="text" class="dashed w-full" />
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label class="flex align-center gap-1">
+                  <input type="checkbox" style="width: 20px; height: 20px" />
+                  <span style="font-size: 1rem"
+                    >Commercial Condominium Unit Owners
+                  </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <!-- Coverage A – Contingent Condominium Unit -->
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption"
+                    >Coverage A – Contingent Condominium Unit
+                  </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <!-- Coverage B – Loss Assessments  -->
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption"
+                    >Coverage B – Loss Assessments
+                  </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <!-- Coverage C – Betterments & Improvements   -->
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption"
+                    >Coverage C – Betterments & Improvements
+                  </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <!--  Commercial Condominium Corporation - Broad Form   -->
+            <tr>
+              <td>
+                <label class="flex align-center gap-1">
+                  <!-- <input type="checkbox" style="width: 20px; height: 20px" /> -->
+                  <span class="small-caption">
+                    Commercial Condominium Corporation - Broad Form
+                  </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <!-- Residential Condominium Corporation - Broad Form -->
+            <tr>
+              <td>
+                <label class="flex align-center gap-1">
+                  <span class="small-caption">
+                    Residential Condominium Corporation - Broad Form
+                  </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <!-- Electronic Data Processing Systems (Including Breakdown Coverage)  -->
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption"
+                    >Electronic Data Processing Systems (Including Breakdown
+                    Coverage)
+                  </span>
+                </label>
+                <dl>
+                  <dt>Coverage Required For Off Premises Laptops</dt>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption">Number of Laptops:</span>
+                      <input type="number" class="w-full" />
+                    </label>
+                  </dd>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption"
+                        >Value of Laptop(s) – Included in above Equipment
+                        Limit:</span
+                      >
+                      <input type="text" class="w-full" />
+                    </label>
+                  </dd>
+                </dl>
+              </td>
+              <td class="vertical-top">
+                <input type="text" />
+              </td>
+              <td class="vertical-top">
+                <input type="text" />
+              </td>
+              <td class="vertical-top">
+                <input type="text" />
+              </td>
+            </tr>
+            <!-- Sign Floater -->
+            <tr>
+              <td>
+                <label class="flex align-center gap-1">
+                  <!-- <input type="checkbox" style="width: 20px; height: 20px" /> -->
+                  <span class="small-caption"> Sign Floater </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <!-- Contractor’s Equipment Floater – Schedule Required If Binding   -->
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">
+                    Contractor’s Equipment Floater – Schedule Required If
+                    Binding
+                  </span>
+                </label>
+                <dl>
+                  <dt></dt>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption"
+                        >RC – Typically provided on items 5 years old & newer
+                        :</span
+                      >
+                      <input type="number" class="w-full" />
+                    </label>
+                  </dd>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption"
+                        >Rented/Borrowed Equipment Extension:</span
+                      >
+                      <input type="text" class="w-full" />
+                    </label>
+                  </dd>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption"
+                        >Rental Charge Re-Imbursement for Substitutes :</span
+                      >
+                      <input type="text" class="w-full" />
+                    </label>
+                  </dd>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption"
+                        >Contractors Loss of Income :</span
+                      >
+                      <input type="text" class="w-full" />
+                    </label>
+                  </dd>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption"
+                        >Permission to Rent/Loan Insured’s Equipment to Other
+                        Contractors :</span
+                      >
+                      <input type="text" class="w-full" />
+                    </label>
+                  </dd>
+                </dl>
+              </td>
+              <td class="vertical-top">
+                <input type="text" />
+              </td>
+              <td class="vertical-top">
+                <input type="text" />
+              </td>
+              <td class="vertical-top">
+                <input type="text" />
+              </td>
+            </tr>
+            <!-- Tool Floater -->
+            <tr>
+              <td>
+                <label class="flex align-center gap-1">
+                  <span class="small-caption">Tool Floater </span>
+                  <!-- <input type="text" class="dashed" /> -->
+                </label>
+
+                <label class="flex align-center gap-1">
+                  <span class="small-caption"
+                    >Total Value of Items Not Exceeding $1,500 Any One Item/Set
+                  </span>
+                  <input type="text" class="dashed" />
+                </label>
+                <label class="flex align-center gap-1">
+                  <span class="small-caption"
+                    >Total Value of Items Exceeding $1,500 Any One Item/Set
+                  </span>
+                  <input type="text" class="dashed" />
+                </label>
+                <label class="flex align-center gap-1">
+                  <input type="checkbox" style="width: 20px; height: 20px" />
+                  <span style="font-size: 1rem"
+                    >RC – Typically provided on items 3 years old & newer
+                  </span>
+                </label>
+              </td>
+              <td class="vertical-top">
+                <input type="text" />
+              </td>
+              <td class="vertical-top">
+                <input type="text" />
+              </td>
+              <td class="vertical-top">
+                <input type="text" />
+              </td>
+            </tr>
+            <!-- Miscellaneous Property Floater – Schedule of Items Required  -->
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption"
+                    >Miscellaneous Property Floater – Schedule of Items Required
+                  </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <!-- Transportation Floater (Covers property of the Insured, while in Insured’s own
+ vehicles or while in the custody of a common carrier)  -->
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption"
+                    >Transportation Floater (Covers property of the Insured,
+                    while in Insured’s own vehicles or while in the custody of a
+                    common carrier)
+                  </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+
+            <!-- Motor Truck Cargo – Attach Schedule of Vehicles  -->
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption"
+                    >Motor Truck Cargo – Attach Schedule of Vehicles
+                  </span>
+                </label>
+                <dl>
+                  <dt></dt>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption"
+                        >Owner’s Form
+                        <span class="xs-caption">
+                          (Property of Insured, being transported in Insured’s
+                          vehicles)
+                        </span>
+                      </span>
+                      <input type="number" class="w-full" />
+                    </label>
+                  </dd>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption"
+                        >Truckmen’s Form
+                        <span class="xs-caption">
+                          (Property of others, being transported by Insured)
+                        </span>
+                      </span>
+                      <input type="text" class="w-full" />
+                    </label>
+                  </dd>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption"
+                        >Include Loading & Unloading
+                      </span>
+                      <input type="text" class="w-full" />
+                    </label>
+                  </dd>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption"
+                        >Include Reefer Breakdown (Spoilage)
+                      </span>
+                      <input type="text" class="w-full" />
+                    </label>
+                  </dd>
+                </dl>
+              </td>
+              <td class="vertical-top">
+                <input type="text" />
+              </td>
+              <td class="vertical-top">
+                <input type="text" />
+              </td>
+              <td class="vertical-top">
+                <input type="text" />
+              </td>
+            </tr>
+            <!-- Builders Risk/COC (Course of Construction) – Separate Application Required  -->
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption"
+                    >Builders Risk/COC (Course of Construction) – Separate
+                    Application Required
+                  </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+
+            <!-- Installation Floater -->
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">Installation Floater </span>
+                </label>
+                <dl>
+                  <dt></dt>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption">Any One Project Site </span>
+                      <input type="number" class="w-full" />
+                    </label>
+                  </dd>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption">Transit </span>
+                      <input type="text" class="w-full" />
+                    </label>
+                  </dd>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption">Any Other Location </span>
+                      <input type="text" class="w-full" />
+                    </label>
+                  </dd>
+                </dl>
+              </td>
+              <td>
+                <input type="text" disabled />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" disabled />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" disabled />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </td>
+            </tr>
+
+            <!-- Bailees’ Customers (ACV) Broad Form Named Perils -->
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">Bailees’ Customers (ACV) </span>
+                </label>
+                <dl>
+                  <dt></dt>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption">Broad Form </span>
+                      <input type="number" class="w-full" />
+                    </label>
+                  </dd>
+                  <dd>
+                    <label class="flex align-center">
+                      <span class="small-caption">Named Perils </span>
+                      <input type="text" class="w-full" />
+                    </label>
+                  </dd>
+                </dl>
+              </td>
+              <td class="vertical-top">
+                <input type="text" />
+              </td>
+              <td class="vertical-top">
+                <input type="text" />
+              </td>
+              <td class="vertical-top">
+                <input type="text" />
+              </td>
+            </tr>
+
+            <!-- Jeweller’s Block – Separate Application Required -->
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption"
+                    >Jeweller’s Block – Separate Application Required
+                  </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">Other - </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">Other - </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Business Interruption -->
+      <div class="wrapper box">
+        <h2>BUSINESS INTERRUPTION</h2>
+        <table class="w-full">
+          <thead>
+            <tr>
+              <th>BUSINESS INTERRUPTION</th>
+              <th>Limit</th>
+              <th>Co-Ins</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <label>
+                  <span class="small-caption"
+                    >Profits - Actual Loss Sustained
+                  </span>
+                </label>
+
+                <dl>
+                  <dt>Period of Indemnity:</dt>
+                  <dd class="flex align-center gap-2">
+                    <label class="flex align-center gap-1">
+                      <input
+                        type="checkbox"
+                        style="width: 20px; height: 20px"
+                      />
+                      <span class="text-1">12 Months (Standard)</span>
+                    </label>
+                    <label class="flex align-center gap-1">
+                      <input
+                        type="checkbox"
+                        style="width: 20px; height: 20px"
+                      />
+                      <span class="text-1">18 Months</span>
+                    </label>
+                    <label class="flex align-center gap-1">
+                      <input
+                        type="checkbox"
+                        style="width: 20px; height: 20px"
+                      />
+                      <span class="text-1">24 Months</span>
+                    </label>
+                  </dd>
+                </dl>
+
+                <dl>
+                  <dt>Include Ordinary Payroll:</dt>
+                  <dd>
+                    <label class="flex align-center gap-1">
+                      <input
+                        type="checkbox"
+                        style="width: 20px; height: 20px"
+                      />
+                      <span class="text-1" style="text-wrap: nowrap"
+                        >90 Days</span
+                      >
+                      <input type="text" class="dashed" />
+                    </label>
+                    <label class="flex align-center gap-1">
+                      <input
+                        type="checkbox"
+                        style="width: 20px; height: 20px"
+                      />
+                      <span class="text-1" style="text-wrap: nowrap"
+                        >180 Days</span
+                      >
+                      <input type="text" class="dashed" />
+                    </label>
+                  </dd>
+                </dl>
+
+                <label>
+                  <span class="small-caption"
+                    >Off Premises Services/Utilities Interruption
+                    Extension</span
+                  >
+                </label>
+                <label>
+                  <span class="small-caption"
+                    >Contingent Loss of Income - Recipient Properties</span
+                  >
+                </label>
+                <label>
+                  <span class="small-caption"
+                    >Contingent Loss of Income – Contributing Properties
+                  </span>
+                </label>
+              </td>
+              <td class="vertical-bottom" style="position: relative">
+                <input
+                  type="text"
+                  style="
+                    display: block;
+                    position: absolute;
+                    top: 5px;
+                    width: 100%;
+                    left: 0;
+                  "
+                />
+                <input type="text" />
+                <input type="text" />
+                <div style="margin-block: 32px"></div>
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </td>
+              <td class="vertical-bottom" style="position: relative">
+                <input
+                  type="text"
+                  style="
+                    display: block;
+                    position: absolute;
+                    top: 5px;
+                    width: 100%;
+                    left: 0;
+                  "
+                />
+                <input type="text" />
+                <input type="text" />
+                <div style="margin-block: 32px"></div>
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </td>
+              <td class="vertical-bottom" style="position: relative">
+                <input
+                  type="text"
+                  style="
+                    display: block;
+                    position: absolute;
+                    top: 5px;
+                    width: 100%;
+                    left: 0;
+                  "
+                />
+                <input type="text" />
+                <input type="text" />
+                <div style="margin-block: 32px"></div>
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </td>
+            </tr>
+            <!-- Profits – Specified Limit  -->
+            <tr>
+              <td>
+                <label>
+                  <span class="small-caption">Profits – Specified Limit </span>
+                </label>
+
+                <dl>
+                  <dt>Period of Indemnity:</dt>
+                  <dd class="flex align-center gap-2">
+                    <label class="flex align-center gap-1">
+                      <input
+                        type="checkbox"
+                        style="width: 20px; height: 20px"
+                      />
+                      <span class="text-1">12 Months (Standard)</span>
+                    </label>
+                    <label class="flex align-center gap-1">
+                      <input
+                        type="checkbox"
+                        style="width: 20px; height: 20px"
+                      />
+                      <span class="text-1">18 Months</span>
+                    </label>
+                    <label class="flex align-center gap-1">
+                      <input
+                        type="checkbox"
+                        style="width: 20px; height: 20px"
+                      />
+                      <span class="text-1">24 Months</span>
+                    </label>
+                  </dd>
+                </dl>
+
+                <dl>
+                  <dt>Include Ordinary Payroll:</dt>
+                  <dd>
+                    <label class="flex align-center gap-1">
+                      <input
+                        type="checkbox"
+                        style="width: 20px; height: 20px"
+                      />
+                      <span class="text-1" style="text-wrap: nowrap"
+                        >90 Days</span
+                      >
+                      <input type="text" class="dashed" />
+                    </label>
+                    <label class="flex align-center gap-1">
+                      <input
+                        type="checkbox"
+                        style="width: 20px; height: 20px"
+                      />
+                      <span class="text-1" style="text-wrap: nowrap"
+                        >180 Days</span
+                      >
+                      <input type="text" class="dashed" />
+                    </label>
+                  </dd>
+                </dl>
+
+                <label>
+                  <span class="small-caption"
+                    >Off Premises Services/Utilities Interruption
+                    Extension</span
+                  >
+                </label>
+                <label>
+                  <span class="small-caption"
+                    >Contingent Loss of Income - Recipient Properties</span
+                  >
+                </label>
+                <label>
+                  <span class="small-caption"
+                    >Contingent Loss of Income – Contributing Properties
+                  </span>
+                </label>
+              </td>
+              <td class="vertical-bottom" style="position: relative">
+                <input
+                  type="text"
+                  style="
+                    display: block;
+                    position: absolute;
+                    top: 5px;
+                    width: 100%;
+                    left: 0;
+                  "
+                />
+                <input type="text" />
+                <input type="text" />
+                <div style="margin-block: 32px"></div>
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </td>
+              <td class="vertical-bottom" style="position: relative">
+                <input
+                  type="text"
+                  style="
+                    display: block;
+                    position: absolute;
+                    top: 5px;
+                    width: 100%;
+                    left: 0;
+                  "
+                />
+                <input type="text" />
+                <input type="text" />
+                <div style="margin-block: 32px"></div>
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </td>
+              <td class="vertical-bottom" style="position: relative">
+                <input
+                  type="text"
+                  style="
+                    display: block;
+                    position: absolute;
+                    top: 5px;
+                    width: 100%;
+                    left: 0;
+                  "
+                />
+                <input type="text" />
+                <input type="text" />
+                <div style="margin-block: 32px"></div>
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </td>
+            </tr>
+            <!-- Gross Rent or Rental Value  -->
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">Gross Rent or Rental Value </span>
+                  <input type="text" class="dashed w-full" />
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <!-- Extra Expense – 100% Payable in 1st Month  -->
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption"
+                    >Extra Expense – 100% Payable in 1st Month</span
+                  >
+                  <input type="text" class="dashed w-full" />
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <!-- Other - -->
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">Other -</span>
+                  <input type="text" class="dashed w-full" />
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Equipment Breakdown -->
+      <div class="wrapper box">
+        <h2>Equipment Breakdown</h2>
+        <table class="w-full box">
+          <thead>
+            <tr>
+              <th>EQUIPMENT BREAKDOWN</th>
+              <th>Deductible</th>
+              <th>Limit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <label>
+                  <span class="small-caption"
+                    >Equipment Breakdown – Quote Broadest Coverage
+                  </span>
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="xs-caption">
+                  Covers damage to equipment by perils (accidents) that are
+                  excluded under the property wordings (i.e. explosion,
+                  overheating, cracking, electric arcing, power surge,
+                  mechanical breakdown, human failure). Requested limit must
+                  match the property limits above. Also covers resultant
+                  property damage and business interruption.
+                </p>
+
+                <label class="flex align-center gap-1">
+                  <input type="checkbox" style="width: 20px; height: 20px" />
+                  <span class="text-1">Include Production Machinery </span>
+                </label>
+
+                <dl>
+                  <dt>
+                    Include Consequential Loss (Spoilage) as a result of
+                    equipment breakdown Required Limit -
+                    <span contenteditable>$25000</span>
+                  </dt>
+                  <dd>
+                    <label class="flex align-center gap-1">
+                      <input
+                        type="checkbox"
+                        style="width: 20px; height: 20px"
+                      />
+                      <span class="text-1"
+                        >Is equipment equipped with temperature rise
+                        alarms?</span
+                      >
+                    </label>
+                    <label class="flex align-center gap-1">
+                      <input
+                        type="checkbox"
+                        style="width: 20px; height: 20px"
+                      />
+                      <span class="text-1"> Are the alarms monitored?</span>
+                    </label>
+                    <label class="flex align-center gap-1">
+                      <input
+                        type="checkbox"
+                        style="width: 20px; height: 20px"
+                      />
+                      <span class="text-1"> Is there back-up power?</span>
+                    </label>
+                  </dd>
+                </dl>
+                <label class="flex align-center gap-1">
+                  <span
+                    class="text-1 flex-1"
+                    style="display: block; text-wrap: nowrap"
+                  >
+                    Business Interruption Follow Forms</span
+                  >
+                  <input type="text" class="dashed" />
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+            <!-- Other - -->
+            <tr>
+              <td>
+                <label class="flex align-center">
+                  <span class="small-caption">Other -</span>
+                  <input type="text" class="dashed w-full" />
+                </label>
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+              <td>
+                <input type="text" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Cyber/Privacy Breach -->
+      <div class="box">
+        <h2>CYBER/PRIVACY BREACH</h2>
+        <p>
+          What is Cyber/Privacy Breach? It is loss, theft, unauthorized access
+          to, or accidental release of personal information. There are several
+          ways a breach or attack can occur. Examples: Stolen or lost devices
+          (ie laptops, discs, flash drives, etc.) or paper files, unauthorized
+          access to or hacking of computer systems, employee error or oversight.
+          Effective Nov 1/18 - The Digital Privacy Act (Bill S-4) and the
+          Personal Information Protection and Electronic Documents Act (PIPEDA)
+          makes it mandatory for all organizations to report data breaches to
+          affected individuals and the Office of the Privacy Commissioner of
+          Canada. Some Insurers can include this coverage as an extension under
+          their commercial policies. If NOT available from the Insurer, then a
+          stand alone policy can be quoted.
+        </p>
+        <label>
+          <span class="small-caption"
+            >Cyber/Privacy Breach – Please quote available options
+          </span>
+          <input type="text" style="padding-block: 10px; margin-top: 10px" />
+        </label>
+      </div>
+
+      <!-- Legal Advice & Legal Expense -->
+      <div class="box">
+        <h2>LEGAL ADVICE & LEGAL EXPENSE</h2>
+        <p>
+          Some Insurers can include this coverage as an extension under their
+          commercial policies. If NOT available from the Insurer, then a stand
+          alone policy can be quoted.
+        </p>
+        <label>
+          <span class="small-caption">Legal Advice </span>
+          <input type="text" style="padding-block: 10px; margin-top: 10px" />
+        </label>
+        <label>
+          <span class="small-caption">Legal Expense </span>
+          <input type="text" style="padding-block: 10px; margin-top: 10px" />
+        </label>
+      </div>
+
+      <!-- Crime -->
+      <div class="form-section">
+        <h2>Crime</h2>
+        <div class="form-group">
+          <label for="comprehensive3D">Comprehensive 3D - Includes:</label>
+          <input type="text" id="comprehensive3D" name="comprehensive3D" />
+        </div>
+        <div class="form-group">
+          <label for="employeeDishonesty">Employee Dishonesty:</label>
+          <input
+            type="text"
+            id="employeeDishonesty"
+            name="employeeDishonesty"
+          />
+        </div>
+        <div class="form-group">
+          <label for="formA"
+            >Form A - One limit applies per loss, regardless of number of
+            employees involved:</label
+          >
+          <input type="text" id="formA" name="formA" />
+        </div>
+        <div class="form-group">
+          <label for="formB">Form B – Limit is per Employee:</label>
+          <input type="text" id="formB" name="formB" />
+        </div>
+        <div class="form-group">
+          <label for="thirdPartyClientExtension"
+            >Third Party/Client Extension:</label
+          >
+          <input
+            type="text"
+            id="thirdPartyClientExtension"
+            name="thirdPartyClientExtension"
+          />
+        </div>
+        <div class="form-group">
+          <label for="lossInsideThePremises">Loss Inside the Premises:</label>
+          <input
+            type="text"
+            id="lossInsideThePremises"
+            name="lossInsideThePremises"
+          />
+        </div>
+        <div class="form-group">
+          <label for="lossOutsideThePremises">Loss Outside the Premises:</label>
+          <input
+            type="text"
+            id="lossOutsideThePremises"
+            name="lossOutsideThePremises"
+          />
+        </div>
+        <div class="form-group">
+          <label for="moneyOrdersCounterfeitPaperCurrency"
+            >Money Orders & Counterfeit Paper Currency:</label
+          >
+          <input
+            type="text"
+            id="moneyOrdersCounterfeitPaperCurrency"
+            name="moneyOrdersCounterfeitPaperCurrency"
+          />
+        </div>
+        <div class="form-group">
+          <label for="depositorsForgery">Depositor’s Forgery:</label>
+          <input type="text" id="depositorsForgery" name="depositorsForgery" />
+        </div>
+        <div class="form-group">
+          <label for="socialEngineeringFraud">Social Engineering Fraud:</label>
+          <input
+            type="text"
+            id="socialEngineeringFraud"
+            name="socialEngineeringFraud"
+          />
+        </div>
+        <div class="form-group">
+          <label for="other5">Other:</label>
+          <input type="text" id="other5" name="other5" />
+        </div>
+      </div>
+
+      <!-- Liability -->
+      <div class="form-section">
+        <h2>Liability</h2>
+        <div class="form-group">
+          <label for="commercialGeneralLiability"
+            >Commercial General Liability (Occurrence Form):</label
+          >
+          <input
+            type="text"
+            id="commercialGeneralLiability"
+            name="commercialGeneralLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="deductibleLiability">Deductible:</label>
+          <input
+            type="text"
+            id="deductibleLiability"
+            name="deductibleLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="limitLiability">Limit:</label>
+          <input type="text" id="limitLiability" name="limitLiability" />
+        </div>
+        <div class="form-group">
+          <label for="deductiblePropertyDamageOnly"
+            >Deductible: Property Damage Only:</label
+          >
+          <input
+            type="text"
+            id="deductiblePropertyDamageOnly"
+            name="deductiblePropertyDamageOnly"
+          />
+        </div>
+        <div class="form-group">
+          <label for="deductibleCombinedPropertyDamageBodilyInjury"
+            >Deductible: Combined Property Damage & Bodily Injury:</label
+          >
+          <input
+            type="text"
+            id="deductibleCombinedPropertyDamageBodilyInjury"
+            name="deductibleCombinedPropertyDamageBodilyInjury"
+          />
+        </div>
+        <div class="form-group">
+          <label for="standardCGLExtensions">Standard CGL Extensions:</label>
+          <input
+            type="text"
+            id="standardCGLExtensions"
+            name="standardCGLExtensions"
+          />
+        </div>
+        <div class="form-group">
+          <label for="15DaysNoticeOfCancellationByInsurer"
+            >15 Days Notice of Cancellation by Insurer:</label
+          >
+          <input
+            type="text"
+            id="15DaysNoticeOfCancellationByInsurer"
+            name="15DaysNoticeOfCancellationByInsurer"
+          />
+        </div>
+        <div class="form-group">
+          <label for="personalInjury"
+            >Personal Injury (ie libel, slander, false arrest of a third
+            party):</label
+          >
+          <input type="text" id="personalInjury" name="personalInjury" />
+        </div>
+        <div class="form-group">
+          <label for="advertisingInjury"
+            >Advertising Injury (ie copyright infringement, misappropriation of
+            advertising ideas):</label
+          >
+          <input type="text" id="advertisingInjury" name="advertisingInjury" />
+        </div>
+        <div class="form-group">
+          <label for="medicalPayments">Medical Payments:</label>
+          <input type="text" id="medicalPayments" name="medicalPayments" />
+        </div>
+        <div class="form-group">
+          <label for="employeesVolunteersAsInsureds"
+            >Employees & Volunteers as Insureds:</label
+          >
+          <input
+            type="text"
+            id="employeesVolunteersAsInsureds"
+            name="employeesVolunteersAsInsureds"
+          />
+        </div>
+        <div class="form-group">
+          <label for="broadFormPropertyDamage"
+            >Broad Form Property Damage:</label
+          >
+          <input
+            type="text"
+            id="broadFormPropertyDamage"
+            name="broadFormPropertyDamage"
+          />
+        </div>
+        <div class="form-group">
+          <label for="broadFormAutomobile"
+            >Broad Form Automobile (Covers attached machinery, unlicensed
+            vehicles, ie, front loaders, etc.):</label
+          >
+          <input
+            type="text"
+            id="broadFormAutomobile"
+            name="broadFormAutomobile"
+          />
+        </div>
+        <div class="form-group">
+          <label for="occurrenceBasisPropertyDamage"
+            >Occurrence Basis Property Damage:</label
+          >
+          <input
+            type="text"
+            id="occurrenceBasisPropertyDamage"
+            name="occurrenceBasisPropertyDamage"
+          />
+        </div>
+        <div class="form-group">
+          <label for="hostLiquorLiability">Host Liquor Liability:</label>
+          <input
+            type="text"
+            id="hostLiquorLiability"
+            name="hostLiquorLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="blanketWrittenContractual"
+            >Blanket Written Contractual:</label
+          >
+          <input
+            type="text"
+            id="blanketWrittenContractual"
+            name="blanketWrittenContractual"
+          />
+        </div>
+        <div class="form-group">
+          <label for="nonOwnedWatercraftLessThan8Metres"
+            >Non Owned Watercraft (Less than 8 Metres):</label
+          >
+          <input
+            type="text"
+            id="nonOwnedWatercraftLessThan8Metres"
+            name="nonOwnedWatercraftLessThan8Metres"
+          />
+        </div>
+        <div class="form-group">
+          <label for="contingentEmployersLiability"
+            >Contingent Employers Liability (Applies when employees are covered
+            under WSIB, but are denied WSIB benefits – ie – employees
+            temporarily away from their own province or subrogation claims by
+            WSIB):</label
+          >
+          <input
+            type="text"
+            id="contingentEmployersLiability"
+            name="contingentEmployersLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="crossLiabilitySeverabilityOfInsured"
+            >Cross Liability, Severability of Insured:</label
+          >
+          <input
+            type="text"
+            id="crossLiabilitySeverabilityOfInsured"
+            name="crossLiabilitySeverabilityOfInsured"
+          />
+        </div>
+        <div class="form-group">
+          <label for="ownerAndContractorProtective"
+            >Owner and Contractor Protective (Covers the insured for vicarious
+            liability arising out of operations performed on his behalf by an
+            independent contractor. Also responds to acts or omissions of the
+            Insured in connection with his supervision of the contractor’s
+            operations):</label
+          >
+          <input
+            type="text"
+            id="ownerAndContractorProtective"
+            name="ownerAndContractorProtective"
+          />
+        </div>
+        <div class="form-group">
+          <label for="tenantsLegalLiability"
+            >Tenant’s Legal Liability - Square Footage Occupied by Insured as
+            Tenant - (Covers legal liability for damage to space the Insured is
+            occupying as a tenant. Limit must reflect the same value that it
+            would cost to rebuild the space the Insured is occupying):</label
+          >
+          <input
+            type="text"
+            id="tenantsLegalLiability"
+            name="tenantsLegalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="nonOwnedAutomobileSPF6"
+            >Non-Owned Automobile (SPF 6) – Must be specifically requested
+            below:</label
+          >
+          <input
+            type="text"
+            id="nonOwnedAutomobileSPF6"
+            name="nonOwnedAutomobileSPF6"
+          />
+        </div>
+        <div class="form-group">
+          <label for="30DaysNoticeOfCancellationByInsurer"
+            >30 Days Notice of Cancellation by Insurer:</label
+          >
+          <input
+            type="text"
+            id="30DaysNoticeOfCancellationByInsurer"
+            name="30DaysNoticeOfCancellationByInsurer"
+          />
+        </div>
+        <div class="form-group">
+          <label for="60DaysNoticeOfCancellationByInsurer"
+            >60 Days Notice of Cancellation by Insurer:</label
+          >
+          <input
+            type="text"
+            id="60DaysNoticeOfCancellationByInsurer"
+            name="60DaysNoticeOfCancellationByInsurer"
+          />
+        </div>
+        <div class="form-group">
+          <label for="waiverOfSubrogationInFavourOf"
+            >Waiver of Subrogation – In favour of:</label
+          >
+          <input
+            type="text"
+            id="waiverOfSubrogationInFavourOf"
+            name="waiverOfSubrogationInFavourOf"
+          />
+        </div>
+        <div class="form-group">
+          <label for="employersBodilyInjury"
+            >Employers’ Bodily Injury (Provides primary liability coverage when
+            employees are not subject to WSIB...eg..clerical employees):</label
+          >
+          <input
+            type="text"
+            id="employersBodilyInjury"
+            name="employersBodilyInjury"
+          />
+        </div>
+        <div class="form-group">
+          <label for="holdHarmlessClauseInFavourOf"
+            >Hold Harmless Clause – In favour of:</label
+          >
+          <input
+            type="text"
+            id="holdHarmlessClauseInFavourOf"
+            name="holdHarmlessClauseInFavourOf"
+          />
+        </div>
+        <div class="form-group">
+          <label for="voluntaryCompensationForEmployees"
+            >Voluntary Compensation for Employees (written in addition to
+            Employers’ Liability):</label
+          >
+          <input
+            type="text"
+            id="voluntaryCompensationForEmployees"
+            name="voluntaryCompensationForEmployees"
+          />
+        </div>
+        <div class="form-group">
+          <label for="employeeBenefitsEO">Employee Benefits E&O:</label>
+          <input
+            type="text"
+            id="employeeBenefitsEO"
+            name="employeeBenefitsEO"
+          />
+        </div>
+        <div class="form-group">
+          <label for="failureToPerform"
+            >Failure to Perform (ie Protective/Security Services):</label
+          >
+          <input type="text" id="failureToPerform" name="failureToPerform" />
+        </div>
+        <div class="form-group">
+          <label for="garageExtension">Garage Extension:</label>
+          <input type="text" id="garageExtension" name="garageExtension" />
+        </div>
+        <div class="form-group">
+          <label for="craneHotelOperatorsLiability"
+            >Crane/Hotel Operators Liability (Also referred to as Rigger’s/Hook
+            Liability) (Renoves the cee exclusion and protects a contractor for
+            liability for damage to property of others, while such property is
+            being moved/lifted with a crane, hoist, or other similar
+            equipment...ie... lifting an air conditioner onto roof with
+            crane):</label
+          >
+          <input
+            type="text"
+            id="craneHotelOperatorsLiability"
+            name="craneHotelOperatorsLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="numberOfExpectedJobsPerYear"
+            >Number of Expected Jobs per Year:</label
+          >
+          <input
+            type="text"
+            id="numberOfExpectedJobsPerYear"
+            name="numberOfExpectedJobsPerYear"
+          />
+        </div>
+        <div class="form-group">
+          <label for="averageAmountOfLift">Average Amount of Lift $:</label>
+          <input
+            type="text"
+            id="averageAmountOfLift"
+            name="averageAmountOfLift"
+          />
+        </div>
+        <div class="form-group">
+          <label for="maximumAmountOfLift">Maximum Amount of Lift $:</label>
+          <input
+            type="text"
+            id="maximumAmountOfLift"
+            name="maximumAmountOfLift"
+          />
+        </div>
+        <div class="form-group">
+          <label for="requiredLimitCraneHotelOperatorsLiability"
+            >Required Limit $:</label
+          >
+          <input
+            type="text"
+            id="requiredLimitCraneHotelOperatorsLiability"
+            name="requiredLimitCraneHotelOperatorsLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="hoistCollision">Hoist Collision:</label>
+          <input type="text" id="hoistCollision" name="hoistCollision" />
+        </div>
+        <div class="form-group">
+          <label for="productRecallExpenses">Product Recall Expenses:</label>
+          <input
+            type="text"
+            id="productRecallExpenses"
+            name="productRecallExpenses"
+          />
+        </div>
+        <div class="form-group">
+          <label for="removalOfXCUExclusion"
+            >Removal of XCU Exclusion (Explosion, Collapse,
+            Underpinning):</label
+          >
+          <input
+            type="text"
+            id="removalOfXCUExclusion"
+            name="removalOfXCUExclusion"
+          />
+        </div>
+        <div class="form-group">
+          <label for="broadFormVendors"
+            >Broad Form Vendors (Coverage extends to vendors who sell Insured’s
+            product):</label
+          >
+          <input type="text" id="broadFormVendors" name="broadFormVendors" />
+        </div>
+        <div class="form-group">
+          <label for="innkeepersLiabilityExtension"
+            >Innkeepers Liability Extension:</label
+          >
+          <input
+            type="text"
+            id="innkeepersLiabilityExtension"
+            name="innkeepersLiabilityExtension"
+          />
+        </div>
+        <div class="form-group">
+          <label for="abuseSupplementalApplicationRequired"
+            >Abuse (Supplemental Application Required):</label
+          >
+          <input
+            type="text"
+            id="abuseSupplementalApplicationRequired"
+            name="abuseSupplementalApplicationRequired"
+          />
+        </div>
+        <div class="form-group">
+          <label for="ripAndTear"
+            >Rip & Tear (Covers labour costs to remove/replace building
+            materials installed and deemed defective):</label
+          >
+          <input type="text" id="ripAndTear" name="ripAndTear" />
+        </div>
+        <div class="form-group">
+          <label for="manufacturersEO">Manufacturer’s E&O:</label>
+          <input type="text" id="manufacturersEO" name="manufacturersEO" />
+        </div>
+        <div class="form-group">
+          <label for="broadFormProducts">Broad Form Products:</label>
+          <input type="text" id="broadFormProducts" name="broadFormProducts" />
+        </div>
+        <div class="form-group">
+          <label for="broadFormCompletedOperations"
+            >Broad Form Completed Operations (in the event of property damage
+            resulting from a portion of the Insured’s work, only the faulty
+            portion of the Insured’s work is excluded, not all of the
+            work):</label
+          >
+          <input
+            type="text"
+            id="broadFormCompletedOperations"
+            name="broadFormCompletedOperations"
+          />
+        </div>
+        <div class="form-group">
+          <label for="limitedPollutionLiabilitySuddenAccidental"
+            >Limited Pollution Liability/Sudden & Accidental (Covers
+            unexpected/numerational discharges that is detected and reported to
+            the company within 120 hours. If exposure is low, companies will
+            often offer this extension. Otherwise, apply for separate Pollution
+            Liability Coverage below):</label
+          >
+          <input
+            type="text"
+            id="limitedPollutionLiabilitySuddenAccidental"
+            name="limitedPollutionLiabilitySuddenAccidental"
+          />
+        </div>
+        <div class="form-group">
+          <label for="other6">Other:</label>
+          <input type="text" id="other6" name="other6" />
+        </div>
+        <div class="form-group">
+          <label for="other7">Other:</label>
+          <input type="text" id="other7" name="other7" />
+        </div>
+        <div class="form-group">
+          <label for="nonOwnedAutomobileLiabilitySPF6"
+            >Non-Owned Automobile Liability (SPF 6):</label
+          >
+          <input
+            type="text"
+            id="nonOwnedAutomobileLiabilitySPF6"
+            name="nonOwnedAutomobileLiabilitySPF6"
+          />
+        </div>
+      </div>
+
+      <!-- Professional Liability -->
+      <div class="form-section">
+        <h2>Professional Liability</h2>
+        <div class="form-group">
+          <label for="professionalLiability"
+            >Professional Liability - Separate Application Required:</label
+          >
+          <input
+            type="text"
+            id="professionalLiability"
+            name="professionalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="deductibleProfessionalLiability">Deductible:</label>
+          <input
+            type="text"
+            id="deductibleProfessionalLiability"
+            name="deductibleProfessionalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="limitProfessionalLiability">Limit:</label>
+          <input
+            type="text"
+            id="limitProfessionalLiability"
+            name="limitProfessionalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDate"
+            >If Insured has a current Claims Made policy in force, what is Retro
+            Date?</label
+          >
+          <input
+            type="text"
+            id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDate"
+            name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDate"
+          />
+        </div>
+      </div>
+
+      <!-- Directors & Officers Liability -->
+      <div class="form-section">
+        <h2>Directors & Officers Liability</h2>
+        <div class="form-group">
+          <label for="directorsOfficersLiability"
+            >Directors & Officers Liability – Separate Application
+            Required:</label
+          >
+          <input
+            type="text"
+            id="directorsOfficersLiability"
+            name="directorsOfficersLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="deductibleDirectorsOfficersLiability">Deductible:</label>
+          <input
+            type="text"
+            id="deductibleDirectorsOfficersLiability"
+            name="deductibleDirectorsOfficersLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="limitDirectorsOfficersLiability">Limit:</label>
+          <input
+            type="text"
+            id="limitDirectorsOfficersLiability"
+            name="limitDirectorsOfficersLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label
+            for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateDirectorsOfficersLiability"
+            >If Insured has a current Claims Made policy in force, what is Retro
+            Date?</label
+          >
+          <input
+            type="text"
+            id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateDirectorsOfficersLiability"
+            name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateDirectorsOfficersLiability"
+          />
+        </div>
+      </div>
+
+      <!-- Wrap-up Liability -->
+      <div class="form-section">
+        <h2>Wrap-up Liability</h2>
+        <div class="form-group">
+          <label for="wrapUpLiability"
+            >Wrap-up Liability – Separate Application Required:</label
+          >
+          <input type="text" id="wrapUpLiability" name="wrapUpLiability" />
+        </div>
+        <div class="form-group">
+          <label for="deductibleWrapUpLiability">Deductible:</label>
+          <input
+            type="text"
+            id="deductibleWrapUpLiability"
+            name="deductibleWrapUpLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="limitWrapUpLiability">Limit:</label>
+          <input
+            type="text"
+            id="limitWrapUpLiability"
+            name="limitWrapUpLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label
+            for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateWrapUpLiability"
+            >If Insured has a current Claims Made policy in force, what is Retro
+            Date?</label
+          >
+          <input
+            type="text"
+            id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateWrapUpLiability"
+            name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateWrapUpLiability"
+          />
+        </div>
+      </div>
+
+      <!-- Pollution Liability -->
+      <div class="form-section">
+        <h2>Pollution Liability</h2>
+        <div class="form-group">
+          <label for="pollutionLiability"
+            >Pollution Liability – Separate Applications Required:</label
+          >
+          <input
+            type="text"
+            id="pollutionLiability"
+            name="pollutionLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="deductiblePollutionLiability">Deductible:</label>
+          <input
+            type="text"
+            id="deductiblePollutionLiability"
+            name="deductiblePollutionLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="limitPollutionLiability">Limit:</label>
+          <input
+            type="text"
+            id="limitPollutionLiability"
+            name="limitPollutionLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label
+            for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDatePollutionLiability"
+            >If Insured has a current Claims Made policy in force, what is Retro
+            Date?</label
+          >
+          <input
+            type="text"
+            id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDatePollutionLiability"
+            name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDatePollutionLiability"
+          />
+        </div>
+      </div>
+
+      <!-- Ship Repairer’s Legal Liability -->
+      <div class="form-section">
+        <h2>Ship Repairer’s Legal Liability</h2>
+        <div class="form-group">
+          <label for="shipRepairersLegalLiability"
+            >Ship Repairer’s Legal Liability – Separate Application
+            Required:</label
+          >
+          <input
+            type="text"
+            id="shipRepairersLegalLiability"
+            name="shipRepairersLegalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="deductibleShipRepairersLegalLiability">Deductible:</label>
+          <input
+            type="text"
+            id="deductibleShipRepairersLegalLiability"
+            name="deductibleShipRepairersLegalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="limitShipRepairersLegalLiability">Limit:</label>
+          <input
+            type="text"
+            id="limitShipRepairersLegalLiability"
+            name="limitShipRepairersLegalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label
+            for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateShipRepairersLegalLiability"
+            >If Insured has a current Claims Made policy in force, what is Retro
+            Date?</label
+          >
+          <input
+            type="text"
+            id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateShipRepairersLegalLiability"
+            name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateShipRepairersLegalLiability"
+          />
+        </div>
+      </div>
+
+      <!-- Marina Operator’s Legal Liability -->
+      <div class="form-section">
+        <h2>Marina Operator’s Legal Liability</h2>
+        <div class="form-group">
+          <label for="marinaOperatorsLegalLiability"
+            >Marina Operator’s Legal Liability – Separate Application
+            Required:</label
+          >
+          <input
+            type="text"
+            id="marinaOperatorsLegalLiability"
+            name="marinaOperatorsLegalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="deductibleMarinaOperatorsLegalLiability"
+            >Deductible:</label
+          >
+          <input
+            type="text"
+            id="deductibleMarinaOperatorsLegalLiability"
+            name="deductibleMarinaOperatorsLegalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="limitMarinaOperatorsLegalLiability">Limit:</label>
+          <input
+            type="text"
+            id="limitMarinaOperatorsLegalLiability"
+            name="limitMarinaOperatorsLegalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label
+            for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateMarinaOperatorsLegalLiability"
+            >If Insured has a current Claims Made policy in force, what is Retro
+            Date?</label
+          >
+          <input
+            type="text"
+            id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateMarinaOperatorsLegalLiability"
+            name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateMarinaOperatorsLegalLiability"
+          />
+        </div>
+      </div>
+
+      <!-- Transportation Broker’s Legal Liability -->
+      <div class="form-section">
+        <h2>Transportation Broker’s Legal Liability</h2>
+        <div class="form-group">
+          <label for="transportationBrokersLegalLiability"
+            >Transportation Broker’s Legal Liability – Separate Application
+            Required:</label
+          >
+          <input
+            type="text"
+            id="transportationBrokersLegalLiability"
+            name="transportationBrokersLegalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="deductibleTransportationBrokersLegalLiability"
+            >Deductible:</label
+          >
+          <input
+            type="text"
+            id="deductibleTransportationBrokersLegalLiability"
+            name="deductibleTransportationBrokersLegalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="limitTransportationBrokersLegalLiability">Limit:</label>
+          <input
+            type="text"
+            id="limitTransportationBrokersLegalLiability"
+            name="limitTransportationBrokersLegalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label
+            for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateTransportationBrokersLegalLiability"
+            >If Insured has a current Claims Made policy in force, what is Retro
+            Date?</label
+          >
+          <input
+            type="text"
+            id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateTransportationBrokersLegalLiability"
+            name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateTransportationBrokersLegalLiability"
+          />
+        </div>
+      </div>
+
+      <!-- Cargo Legal Liability -->
+      <div class="form-section">
+        <h2>Cargo Legal Liability</h2>
+        <div class="form-group">
+          <label for="cargoLegalLiability"
+            >Cargo Legal Liability (Limit to reflect the maximum load the
+            Insured arranges for shipment):</label
+          >
+          <input
+            type="text"
+            id="cargoLegalLiability"
+            name="cargoLegalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="deductibleCargoLegalLiability">Deductible:</label>
+          <input
+            type="text"
+            id="deductibleCargoLegalLiability"
+            name="deductibleCargoLegalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="limitCargoLegalLiability">Limit:</label>
+          <input
+            type="text"
+            id="limitCargoLegalLiability"
+            name="limitCargoLegalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label
+            for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateCargoLegalLiability"
+            >If Insured has a current Claims Made policy in force, what is Retro
+            Date?</label
+          >
+          <input
+            type="text"
+            id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateCargoLegalLiability"
+            name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateCargoLegalLiability"
+          />
+        </div>
+      </div>
+
+      <!-- Contingent Cargo -->
+      <div class="form-section">
+        <h2>Contingent Cargo</h2>
+        <div class="form-group">
+          <label for="contingentCargo"
+            >Contingent Cargo (Limit same as Cargo Legal Liability limit.
+            Responds if third party shipper’s primary policy fails):</label
+          >
+          <input type="text" id="contingentCargo" name="contingentCargo" />
+        </div>
+        <div class="form-group">
+          <label for="deductibleContingentCargo">Deductible:</label>
+          <input
+            type="text"
+            id="deductibleContingentCargo"
+            name="deductibleContingentCargo"
+          />
+        </div>
+        <div class="form-group">
+          <label for="limitContingentCargo">Limit:</label>
+          <input
+            type="text"
+            id="limitContingentCargo"
+            name="limitContingentCargo"
+          />
+        </div>
+        <div class="form-group">
+          <label
+            for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateContingentCargo"
+            >If Insured has a current Claims Made policy in force, what is Retro
+            Date?</label
+          >
+          <input
+            type="text"
+            id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateContingentCargo"
+            name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateContingentCargo"
+          />
+        </div>
+      </div>
+
+      <!-- E&O (Errors & Omissions) -->
+      <div class="form-section">
+        <h2>E&O (Errors & Omissions)</h2>
+        <div class="form-group">
+          <label for="eoErrorsOmissions"
+            >E&O (Covers Insured’s mistakes resulting in financial loss to
+            customer):</label
+          >
+          <input type="text" id="eoErrorsOmissions" name="eoErrorsOmissions" />
+        </div>
+        <div class="form-group">
+          <label for="deductibleEOErrorsOmissions">Deductible:</label>
+          <input
+            type="text"
+            id="deductibleEOErrorsOmissions"
+            name="deductibleEOErrorsOmissions"
+          />
+        </div>
+        <div class="form-group">
+          <label for="limitEOErrorsOmissions">Limit:</label>
+          <input
+            type="text"
+            id="limitEOErrorsOmissions"
+            name="limitEOErrorsOmissions"
+          />
+        </div>
+        <div class="form-group">
+          <label
+            for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateEOErrorsOmissions"
+            >If Insured has a current Claims Made policy in force, what is Retro
+            Date?</label
+          >
+          <input
+            type="text"
+            id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateEOErrorsOmissions"
+            name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateEOErrorsOmissions"
+          />
+        </div>
+      </div>
+
+      <!-- Warehouseman’s Legal Liability -->
+      <div class="form-section">
+        <h2>Warehouseman’s Legal Liability</h2>
+        <div class="form-group">
+          <label for="warehousemansLegalLiability"
+            >Warehouseman’s Legal Liability – Separate Application
+            Required:</label
+          >
+          <input
+            type="text"
+            id="warehousemansLegalLiability"
+            name="warehousemansLegalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="deductibleWarehousemansLegalLiability">Deductible:</label>
+          <input
+            type="text"
+            id="deductibleWarehousemansLegalLiability"
+            name="deductibleWarehousemansLegalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="limitWarehousemansLegalLiability">Limit:</label>
+          <input
+            type="text"
+            id="limitWarehousemansLegalLiability"
+            name="limitWarehousemansLegalLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label
+            for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateWarehousemansLegalLiability"
+            >If Insured has a current Claims Made policy in force, what is Retro
+            Date?</label
+          >
+          <input
+            type="text"
+            id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateWarehousemansLegalLiability"
+            name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateWarehousemansLegalLiability"
+          />
+        </div>
+      </div>
+
+      <!-- Umbrella Liability -->
+      <div class="form-section">
+        <h2>Umbrella Liability</h2>
+        <div class="form-group">
+          <label for="umbrellaLiability"
+            >Umbrella Liability – Separate Application Required:</label
+          >
+          <input type="text" id="umbrellaLiability" name="umbrellaLiability" />
+        </div>
+        <div class="form-group">
+          <label for="deductibleUmbrellaLiability">Deductible:</label>
+          <input
+            type="text"
+            id="deductibleUmbrellaLiability"
+            name="deductibleUmbrellaLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="limitUmbrellaLiability">Limit:</label>
+          <input
+            type="text"
+            id="limitUmbrellaLiability"
+            name="limitUmbrellaLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label
+            for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateUmbrellaLiability"
+            >If Insured has a current Claims Made policy in force, what is Retro
+            Date?</label
+          >
+          <input
+            type="text"
+            id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateUmbrellaLiability"
+            name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateUmbrellaLiability"
+          />
+        </div>
+      </div>
+
+      <!-- Excess Liability -->
+      <div class="form-section">
+        <h2>Excess Liability</h2>
+        <div class="form-group">
+          <label for="excessLiability">Excess Liability:</label>
+          <input type="text" id="excessLiability" name="excessLiability" />
+        </div>
+        <div class="form-group">
+          <label for="deductibleExcessLiability">Deductible:</label>
+          <input
+            type="text"
+            id="deductibleExcessLiability"
+            name="deductibleExcessLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label for="limitExcessLiability">Limit:</label>
+          <input
+            type="text"
+            id="limitExcessLiability"
+            name="limitExcessLiability"
+          />
+        </div>
+        <div class="form-group">
+          <label
+            for="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateExcessLiability"
+            >If Insured has a current Claims Made policy in force, what is Retro
+            Date?</label
+          >
+          <input
+            type="text"
+            id="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateExcessLiability"
+            name="ifInsuredHasCurrentClaimsMadePolicyInForceWhatIsRetroDateExcessLiability"
+          />
+        </div>
+      </div>
+
+      <!-- Other -->
+      <div class="form-section">
+        <h2>Other</h2>
+        <div class="form-group">
+          <label for="other8">Other:</label>
+          <input type="text" id="other8" name="other8" />
+        </div>
+        <div class="form-group">
+          <label for="other9">Other:</label>
+          <input type="text" id="other9" name="other9" />
+        </div>
+      </div>
+
+      <!-- Signatures -->
+      <div class="form-section">
+        <h2>Signatures</h2>
+        <div class="form-group">
+          <label for="signatureOfInsuredOrAuthorizedRepresentative"
+            >Signature of Insured or Authorized Representative:</label
+          >
+          <input
+            type="text"
+            id="signatureOfInsuredOrAuthorizedRepresentative"
+            name="signatureOfInsuredOrAuthorizedRepresentative"
+          />
+        </div>
+        <div class="form-group">
+          <label for="printNameAndTitle">Print Name and Title:</label>
+          <input type="text" id="printNameAndTitle" name="printNameAndTitle" />
+        </div>
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" />
+        </div>
+        <div class="form-group">
+          <label for="signatureOfBroker">Signature of Broker:</label>
+          <input type="text" id="signatureOfBroker" name="signatureOfBroker" />
+        </div>
+        <div class="form-group">
+          <label for="printNameBroker">Print Name:</label>
+          <input type="text" id="printNameBroker" name="printNameBroker" />
+        </div>
+        <div class="form-group">
+          <label for="doYouRecommendThisRiskInEveryRespect"
+            >Do you recommend this risk in every respect?</label
+          >
+          <select
+            id="doYouRecommendThisRiskInEveryRespect"
+            name="doYouRecommendThisRiskInEveryRespect"
+          >
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-section">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+    <script></script>
+  </body>
+</html>
